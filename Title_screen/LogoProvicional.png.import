@@ -1,0 +1,34 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/LogoProvicional.png-3b5314202e14c2b60157aec4e4f35eb4.stex"
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+source_file="res://Title_screen/LogoProvicional.png"
+dest_files=[ "res://.import/LogoProvicional.png-3b5314202e14c2b60157aec4e4f35eb4.stex" ]
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/bptc_ldr=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=false
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+process/invert_color=false
+stream=false
+size_limit=0
+detect_3d=false
+svg/scale=1.0
