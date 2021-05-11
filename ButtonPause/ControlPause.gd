@@ -11,7 +11,7 @@ func _process(_delta):
 
 func _on_Salir_pressed():
 	# warning-ignore:return_value_discarded
-	get_tree().change_scene('res://Title_screen/TitleScreen.tscn')
+	get_tree().quit()
 
 func _on_Continuar_pressed():
 	if get_tree().paused == true:
