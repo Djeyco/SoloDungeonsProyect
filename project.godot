@@ -17,7 +17,7 @@ _global_script_class_icons={
 
 config/name="Solo Dungeons"
 run/main_scene="res://Title_screen/TitleScreen.tscn"
-config/icon="res://icon.png"
+config/icon="res://Title_screen/Logo Solo Dungeons.png"
 
 [autoload]
 

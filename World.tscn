@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://World/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -11,8 +11,7 @@
 [ext_resource path="res://World/Tree.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World/GroundTileMap.png" type="Texture" id=11]
-[ext_resource path="res://Title_screen/fonts/enchabted_land_16.tres" type="DynamicFont" id=13]
-[ext_resource path="res://ButtonPause/ControlPause.gd" type="Script" id=14]
+[ext_resource path="res://ButtonPause/ControlPause.tscn" type="PackedScene" id=12]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -677,13 +676,15 @@ position = Vector2( 166, -57 )
 [node name="Tree2" parent="YSort/Trees" instance=ExtResource( 9 )]
 position = Vector2( 104, 160 )
 
-[node name="Bat" parent="YSort" instance=ExtResource( 7 )]
+[node name="Bat" type="YSort" parent="YSort"]
+
+[node name="Bat" parent="YSort/Bat" instance=ExtResource( 7 )]
 position = Vector2( 285, 77 )
 
-[node name="Bat2" parent="YSort" instance=ExtResource( 7 )]
+[node name="Bat2" parent="YSort/Bat" instance=ExtResource( 7 )]
 position = Vector2( 216, 160 )
 
-[node name="Bat3" parent="YSort" instance=ExtResource( 7 )]
+[node name="Bat3" parent="YSort/Bat" instance=ExtResource( 7 )]
 position = Vector2( 40, 96 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -694,117 +695,10 @@ margin_top = 3.0
 margin_right = 63.0
 margin_bottom = 14.0
 
-[node name="ControlPause" type="Control" parent="CanvasLayer"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-script = ExtResource( 14 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Botones" type="Control" parent="CanvasLayer/ControlPause"]
-visible = false
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = 270.667
-margin_top = -100.679
-margin_right = 295.667
-margin_bottom = -75.6789
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Label" type="Label" parent="CanvasLayer/ControlPause/Botones"]
-margin_left = -293.667
-margin_top = 35.6789
-margin_right = -218.667
-margin_bottom = 60.6789
-custom_fonts/font = ExtResource( 13 )
-custom_colors/font_color = Color( 0.627451, 0.0196078, 0.0196078, 1 )
-custom_colors/font_color_shadow = Color( 0.698039, 0.690196, 0.0509804, 1 )
-text = "PAUSA"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Continuar" type="Button" parent="CanvasLayer/ControlPause/Botones"]
-pause_mode = 2
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -312.5
-margin_top = 52.5
-margin_right = -237.5
-margin_bottom = 77.5
-custom_fonts/font = ExtResource( 13 )
-custom_colors/font_color = Color( 0.592157, 0.670588, 0.0352941, 1 )
-custom_colors/font_color_hover = Color( 0.627451, 0.0196078, 0.0196078, 1 )
-text = "Continuar"
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Guardar" type="Button" parent="CanvasLayer/ControlPause/Botones"]
-pause_mode = 2
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -312.5
-margin_top = 77.5
-margin_right = -237.5
-margin_bottom = 102.5
-custom_fonts/font = ExtResource( 13 )
-custom_colors/font_color = Color( 0.592157, 0.670588, 0.0352941, 1 )
-custom_colors/font_color_hover = Color( 0.627451, 0.0196078, 0.0196078, 1 )
-text = "Guardar"
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Cargar" type="Button" parent="CanvasLayer/ControlPause/Botones"]
-pause_mode = 2
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -312.5
-margin_top = 102.5
-margin_right = -237.5
-margin_bottom = 127.5
-custom_fonts/font = ExtResource( 13 )
-custom_colors/font_color = Color( 0.592157, 0.670588, 0.0352941, 1 )
-custom_colors/font_color_hover = Color( 0.627451, 0.0196078, 0.0196078, 1 )
-text = "Cargar"
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Salir" type="Button" parent="CanvasLayer/ControlPause/Botones"]
-pause_mode = 2
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -312.5
-margin_top = 127.5
-margin_right = -237.5
-margin_bottom = 152.5
-custom_fonts/font = ExtResource( 13 )
-custom_colors/font_color = Color( 0.592157, 0.670588, 0.0352941, 1 )
-custom_colors/font_color_hover = Color( 0.627451, 0.0196078, 0.0196078, 1 )
-text = "Salir"
-flat = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
-[connection signal="pressed" from="CanvasLayer/ControlPause/Botones/Continuar" to="CanvasLayer/ControlPause" method="_on_Continuar_pressed"]
-[connection signal="pressed" from="CanvasLayer/ControlPause/Botones/Salir" to="CanvasLayer/ControlPause" method="_on_Salir_pressed"]
+[node name="ControlPause" parent="CanvasLayer" instance=ExtResource( 12 )]
+margin_left = -0.396851
+margin_top = -9.52441
+margin_right = -0.396851
+margin_bottom = -9.52441
 
 [editable path="Camera2D"]

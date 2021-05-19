@@ -7,4 +7,5 @@ align = 0
 scene_to_load = "res://Espacio en Proseso/EnProceso.tscn"
 
 [node name="Label" parent="." index="0"]
+custom_colors/font_color_shadow = Color( 0.32549, 0.364706, 0.0235294, 1 )
 text = "Cargar"
