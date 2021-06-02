@@ -1,6 +1,5 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Title_screen/LogoProvicional.png" type="Texture" id=1]
 [ext_resource path="res://ButtonPause/ControlPause.gd" type="Script" id=2]
 [ext_resource path="res://ButtonPause/Ventana_de_pausa.png" type="Texture" id=3]
 [ext_resource path="res://ButtonPause/Boton1.png" type="Texture" id=4]
@@ -15,6 +14,7 @@ __meta__ = {
 }
 
 [node name="FondoMenu" type="TextureRect" parent="."]
+visible = false
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -152,10 +152,5 @@ clip_text = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 272, 80 )
-scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 1 )
 [connection signal="pressed" from="FondoMenu/Botones/Continuar" to="." method="_on_Continuar_pressed"]
 [connection signal="pressed" from="FondoMenu/Botones/Salir" to="." method="_on_Salir_pressed"]

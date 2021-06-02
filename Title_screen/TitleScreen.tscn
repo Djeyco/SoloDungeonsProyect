@@ -51,7 +51,8 @@ rect_min_size = Vector2( 0, 100 )
 stretch_mode = 6
 
 [node name="Logo Solo Dungeons" type="Sprite" parent="Menu/Logo"]
-position = Vector2( 156.08, 66.7943 )
+position = Vector2( 149.952, 67.3845 )
+scale = Vector2( 0.0337075, 0.0337075 )
 texture = ExtResource( 8 )
 
 [node name="CenterRow" type="HBoxContainer" parent="Menu"]
