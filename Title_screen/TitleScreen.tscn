@@ -37,62 +37,62 @@ texture = ExtResource( 2 )
 
 [node name="Menu" type="VBoxContainer" parent="."]
 margin_left = 10.0
-margin_top = -12.0
-margin_right = 310.0
-margin_bottom = 179.0
+margin_top = -12.1101
+margin_right = 307.0
+margin_bottom = 178.89
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Logo" type="TextureRect" parent="Menu"]
-margin_right = 300.0
+margin_right = 297.0
 margin_bottom = 100.0
 rect_min_size = Vector2( 0, 100 )
 stretch_mode = 6
 
-[node name="Sprite" type="Sprite" parent="Menu/Logo"]
-position = Vector2( 215.848, 93.9551 )
-scale = Vector2( 1.6, 1.6 )
+[node name="Logo Solo Dungeons" type="Sprite" parent="Menu/Logo"]
+position = Vector2( 149.952, 67.3845 )
+scale = Vector2( 0.0337075, 0.0337075 )
 texture = ExtResource( 8 )
 
 [node name="CenterRow" type="HBoxContainer" parent="Menu"]
-margin_top = 70.0
-margin_right = 300.0
+margin_top = 104.0
+margin_right = 297.0
 margin_bottom = 170.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Buttons" type="VBoxContainer" parent="Menu/CenterRow"]
-margin_right = 148.0
-margin_bottom = 100.0
+margin_right = 146.0
+margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 3
 
 [node name="NuevoJuegoButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
-margin_right = 148.0
+margin_right = 146.0
 align = 0
 
 [node name="CargarButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 1 )]
 margin_top = 23.0
-margin_right = 148.0
+margin_right = 146.0
 margin_bottom = 43.0
 
 [node name="SalirButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
 margin_top = 46.0
-margin_right = 148.0
+margin_right = 146.0
 margin_bottom = 66.0
 
 [node name="CuadroVacio" type="CenterContainer" parent="Menu/CenterRow"]
-margin_left = 152.0
-margin_right = 300.0
-margin_bottom = 100.0
+margin_left = 150.0
+margin_right = 297.0
+margin_bottom = 66.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="VersionLabel" type="Label" parent="Menu"]
 margin_top = 174.0
-margin_right = 300.0
+margin_right = 297.0
 margin_bottom = 191.0
 size_flags_vertical = 3
 custom_fonts/font = SubResource( 1 )
