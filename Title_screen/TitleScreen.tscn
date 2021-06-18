@@ -72,6 +72,7 @@ custom_constants/separation = 3
 [node name="NuevoJuegoButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
 margin_right = 146.0
 align = 0
+scene_to_load = "res://Maps/Town.tscn"
 
 [node name="CargarButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 1 )]
 margin_top = 23.0

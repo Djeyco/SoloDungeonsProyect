@@ -8,9 +8,14 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Node",
+"class": "Walker",
+"language": "GDScript",
+"path": "res://Maps/RecursosMap/Walker.gd"
+} ]
 _global_script_class_icons={
-
+"Walker": ""
 }
 
 [application]
@@ -113,6 +118,7 @@ Pause={
 2d_physics/layer_4="EnemyHurtbox"
 2d_physics/layer_5="Enemy"
 2d_physics/layer_6="SoftCollisions"
+2d_physics/layer_7="LimitMap"
 
 [rendering]
 
