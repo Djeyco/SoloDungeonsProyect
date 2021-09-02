@@ -27,6 +27,7 @@ config/icon="res://Title_screen/Logo Solo Dungeons.png"
 [autoload]
 
 PlayerStats="*res://Player/PlayerStats.tscn"
+Global="*res://Maps/RecursosMap/Global.gd"
 
 [display]
 

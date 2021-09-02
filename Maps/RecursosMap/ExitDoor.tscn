@@ -3,37 +3,39 @@
 [ext_resource path="res://Maps/RecursosMap/ExitDoor.gd" type="Script" id=1]
 [ext_resource path="res://Maps/RecursosMap/Portal_1.png" type="Texture" id=2]
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
 region = Rect2( 80, 0, 80, 80 )
 
-[sub_resource type="AtlasTexture" id=9]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
 region = Rect2( 160, 0, 80, 80 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 80, 80 )
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=4]
 resource_local_to_scene = true
 animations = [ {
-"frames": [ SubResource( 8 ), SubResource( 9 ), SubResource( 8 ), SubResource( 7 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 1 ), SubResource( 3 ) ],
 "loop": true,
 "name": "Portal 1",
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=6]
+[sub_resource type="CircleShape2D" id=5]
 radius = 13.8265
 
-[node name="ExitDoor" type="Area2D"]
+[node name="ExitDoor" type="Area2D" groups=[
+"Spawn",
+]]
 script = ExtResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 16.4109, 16.4109 )
 scale = Vector2( 0.589727, 0.589727 )
-frames = SubResource( 5 )
+frames = SubResource( 4 )
 animation = "Portal 1"
 frame = 2
 playing = true
@@ -41,5 +43,5 @@ playing = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( 15.1259, 16.5245 )
-shape = SubResource( 6 )
+shape = SubResource( 5 )
 [connection signal="body_entered" from="." to="." method="_on_ExitDoor_body_entered"]

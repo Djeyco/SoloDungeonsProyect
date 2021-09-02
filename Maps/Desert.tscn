@@ -537,4 +537,8 @@ collision_mask = 2147483650
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LimitMap"]
 polygon = PoolVector2Array( -272, -224, 592, -224, 592, 432, -272, 432, -272, -224, -272, -256, -288, -256, -288, 448, 608, 448, 608, -256, -272, -256 )
 
+[node name="Enemy_spawn_timer" type="Timer" parent="."]
+autostart = true
+[connection signal="timeout" from="Enemy_spawn_timer" to="." method="_on_Enemy_spawn_timer_timeout"]
+
 [editable path="Camera2D"]
