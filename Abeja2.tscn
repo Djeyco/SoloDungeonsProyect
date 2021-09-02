@@ -12,39 +12,39 @@
 [ext_resource path="res://Effects/AnimationPlayer.tscn" type="PackedScene" id=10]
 [ext_resource path="res://WhiteColor.shader" type="Shader" id=11]
 
-[sub_resource type="ShaderMaterial" id=11]
+[sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 11 )
 shader_param/active = false
 
-[sub_resource type="ShaderMaterial" id=12]
+[sub_resource type="ShaderMaterial" id=2]
 resource_local_to_scene = true
 shader = ExtResource( 11 )
 shader_param/active = false
 
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 1 )
 region = Rect2( 27, 0, 27, 24 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 27, 24 )
 
-[sub_resource type="SpriteFrames" id=15]
+[sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 13 ), SubResource( 14 ) ],
+"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "Fly",
 "speed": 15.0
 } ]
 
-[sub_resource type="CircleShape2D" id=16]
+[sub_resource type="CircleShape2D" id=6]
 radius = 4.06095
 
-[sub_resource type="CapsuleShape2D" id=17]
+[sub_resource type="CapsuleShape2D" id=7]
 radius = 9.11528
 height = 6.22037
 
-[sub_resource type="CircleShape2D" id=18]
+[sub_resource type="CircleShape2D" id=8]
 radius = 472.271
 
 [sub_resource type="CircleShape2D" id=9]
@@ -54,15 +54,15 @@ radius = 6.0
 radius = 6.0
 
 [node name="Abeja" type="KinematicBody2D"]
-material = SubResource( 11 )
+material = SubResource( 1 )
 collision_layer = 16
 script = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-material = SubResource( 12 )
-frames = SubResource( 15 )
+material = SubResource( 2 )
+frames = SubResource( 5 )
 animation = "Fly"
-frame = 1
+frame = 2
 playing = true
 offset = Vector2( 1.5, -15 )
 
@@ -71,7 +71,7 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-shape = SubResource( 16 )
+shape = SubResource( 6 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 4 )]
 visible = false
@@ -80,15 +80,16 @@ collision_mask = 1
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
 position = Vector2( 0, -15 )
-shape = SubResource( 17 )
+shape = SubResource( 7 )
 
 [node name="Stats" parent="." instance=ExtResource( 6 )]
 max_health = 2
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 5 )]
+visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
-shape = SubResource( 18 )
+shape = SubResource( 8 )
 
 [node name="Hitbox" parent="." instance=ExtResource( 7 )]
 visible = false
