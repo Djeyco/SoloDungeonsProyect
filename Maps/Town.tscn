@@ -1,14 +1,14 @@
 [gd_scene load_steps=61 format=2]
 
-[ext_resource path="res://Maps/RecursosMap/camino_de_pueblo.png" type="Texture" id=1]
+[ext_resource path="res://Maps/RecursosMap/sprites/camino_de_pueblo.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Maps/RecursosMap/Background.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Maps/RecursosMap/DirtTileset.png" type="Texture" id=4]
-[ext_resource path="res://Maps/RecursosMap/CliffTileset.png" type="Texture" id=5]
-[ext_resource path="res://Maps/RecursosMap/Casa_de_madera.png" type="Texture" id=6]
-[ext_resource path="res://Maps/RecursosMap/Casa_de_ladrillo.png" type="Texture" id=7]
+[ext_resource path="res://Maps/RecursosMap/tscn/Background.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Maps/RecursosMap/sprites/DirtTileset.png" type="Texture" id=4]
+[ext_resource path="res://Maps/RecursosMap/sprites/CliffTileset.png" type="Texture" id=5]
+[ext_resource path="res://Maps/RecursosMap/sprites/Casa_de_madera.png" type="Texture" id=6]
+[ext_resource path="res://Maps/RecursosMap/sprites/Casa_de_ladrillo.png" type="Texture" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Maps/RecursosMap/Bush.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Maps/RecursosMap/tscn/Bush.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
 [ext_resource path="res://ButtonPause/ControlPause.tscn" type="PackedScene" id=12]
 
@@ -548,7 +548,6 @@ texture = ExtResource( 7 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="YSort2/Casa 2/StaticBody2D"]
 position = Vector2( 0, 1.33265 )
-scale = Vector2( 1, 1 )
 polygon = PoolVector2Array( -236.661, 205.879, 188.073, 205.879, 188.073, -246.155, -475.573, -246.155, -475.573, 121.123, -236.661, 121.123 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]

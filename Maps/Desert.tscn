@@ -1,12 +1,14 @@
 [gd_scene load_steps=57 format=2]
 
-[ext_resource path="res://Maps/RecursosMap/Desert.gd" type="Script" id=1]
+[ext_resource path="res://Maps/RecursosMap/gd/Desert.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Maps/RecursosMap/DirtTileset.png" type="Texture" id=4]
-[ext_resource path="res://Maps/RecursosMap/CliffTileset.png" type="Texture" id=5]
+[ext_resource path="res://Maps/RecursosMap/sprites/DirtTileset.png" type="Texture" id=4]
+[ext_resource path="res://Maps/RecursosMap/sprites/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
 [ext_resource path="res://ButtonPause/ControlPause.tscn" type="PackedScene" id=12]
+
+
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"

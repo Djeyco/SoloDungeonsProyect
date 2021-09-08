@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Maps/RecursosMap/sprites/esqueleto muerto.png" type="Texture" id=1]
+
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 8.86748
+height = 0.0
+
+[node name="Persona muerta" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.846765, 0.846765 )
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2.64866, 0 )
+shape = SubResource( 1 )

@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "Walker",
 "language": "GDScript",
-"path": "res://Maps/RecursosMap/Walker.gd"
+"path": "res://Maps/RecursosMap/gd/Walker.gd"
 } ]
 _global_script_class_icons={
 "Walker": ""
@@ -27,7 +27,7 @@ config/icon="res://Title_screen/Logo Solo Dungeons.png"
 [autoload]
 
 PlayerStats="*res://Player/PlayerStats.tscn"
-Global="*res://Maps/RecursosMap/Global.gd"
+Global="*res://Maps/RecursosMap/gd/Global.gd"
 
 [display]
 
