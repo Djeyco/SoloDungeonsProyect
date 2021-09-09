@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Maps/RecursosMap/sprites/Casa_de_madera.png" type="Texture" id=1]
+
+[node name="Casa de Madera" type="Sprite"]
+texture = ExtResource( 1 )
+offset = Vector2( 0, -140 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PoolVector2Array( 475.853, -272.142, 105.859, -273.824, 105.859, -183.007, -386.906, -183.007, -388.588, 75.9894, 238.721, 74.3076, 237.038, -8.10074, 477.534, -9.78253 )

@@ -1,0 +1,17 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Maps/RecursosMap/sprites/Casas.png" type="Texture" id=1]
+
+[node name="Mercado y Almacen" type="Sprite"]
+texture = ExtResource( 1 )
+offset = Vector2( 0, -80 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PoolVector2Array( 58.5768, -108.839, 58.8172, 33.329, -71.2541, 32.4381, -71.2541, 62.7287, -408.367, 65.1428, -408.367, -104.349 )
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="StaticBody2D"]
+visible = false
+polygon = PoolVector2Array( 411.03, -70.6752, 412.152, 32.5914, 69.8014, 32.5914, 70.9239, -70.6752 )
