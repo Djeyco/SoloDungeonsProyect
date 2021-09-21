@@ -3,6 +3,7 @@
 [ext_resource path="res://Maps/RecursosMap/sprites/Casa_de_madera.png" type="Texture" id=1]
 
 [node name="Casa de Madera" type="Sprite"]
+scale = Vector2( 1.26101, 1.26101 )
 texture = ExtResource( 1 )
 offset = Vector2( 0, -140 )
 
