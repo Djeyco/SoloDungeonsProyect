@@ -1,7 +1,7 @@
 extends Node2D
 
 var enemy_1 = preload("res://Abeja2.tscn")
-var objeto = preload("res://Maps/RecursosMap/Tree.tscn")
+var objeto = preload("res://Maps/RecursosMap/tscn/Tree.tscn")
 
 func _ready():
 	Global.node_creation_parent = self
