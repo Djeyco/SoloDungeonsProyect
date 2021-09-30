@@ -6,7 +6,7 @@
 [ext_resource path="res://Maps/RecursosMap/sprites/DirtTileset.png" type="Texture" id=4]
 [ext_resource path="res://Maps/RecursosMap/sprites/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://Maps/RecursosMap/tscn/Casa Azul.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Maps/RecursosMap/tscn/Mercado y Almacen.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Maps/RecursosMap/Mercado y Almacen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Maps/RecursosMap/tscn/Bush.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
