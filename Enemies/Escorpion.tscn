@@ -26,18 +26,18 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=5]
-radius = 7.70959
-height = 16.1896
+radius = 7.19129
+height = 17.0896
 
 [node name="Escorpion" type="KinematicBody2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( -0.316528, -5.44409 )
 frames = SubResource( 4 )
+offset = Vector2( 0, -7 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2( -1.60315, 0.349609 )
+position = Vector2( -0.60315, 0.349609 )
 rotation = 1.5708
 shape = SubResource( 5 )
 
