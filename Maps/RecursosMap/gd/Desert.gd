@@ -6,17 +6,17 @@ var objeto = preload("res://Maps/RecursosMap/tscn/Tree.tscn")
 func _ready():
 	Global.node_creation_parent = self
 	randomize()
-	_crear_objeto()
+#	_crear_objeto()
 
-func _crear_objeto():
-	var _cont = 0
-	for cont in 10:
-		var randix = rand_range(-192, 384)
-		var  randiy = rand_range(-256, 576)
-		var crear = objeto.instance()
-		add_child(crear)
-		crear.position.x = randix
-		crear.position.y = randiy
+#func _crear_objeto():
+#	var _cont = 0
+#	for cont in 10:
+#		var randix = rand_range(-192, 384)
+#		var  randiy = rand_range(-256, 576)
+#		var crear = objeto.instance()
+#		add_child(crear)
+#		crear.position.x = randix
+#		crear.position.y = randiy
 
 func _exit_tree():
 	Global.node_creation_parent = null
