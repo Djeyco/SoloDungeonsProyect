@@ -496,7 +496,8 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 [node name="World" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource( 3 )]
-position = Vector2( 149.282, 96.6926 )
+position = Vector2( 155.861, 84 )
+scale = Vector2( 1.24505, 1.38889 )
 
 [node name="DirtPathTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -510,6 +511,13 @@ cell_size = Vector2( 32, 32 )
 collision_mask = 0
 format = 1
 
+[node name="LimitMap" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LimitMap"]
+position = Vector2( 1.52588e-05, 7.62939e-06 )
+scale = Vector2( 1, 1 )
+polygon = PoolVector2Array( -288, 360, 600, 360, 600, -184, -248, -184, -248, -152, 568, -144, 568, 328, -248, 328, -248, -144, -280, -168 )
+
 [node name="Camino" type="Sprite" parent="."]
 position = Vector2( 146.456, 82.8545 )
 scale = Vector2( 0.474109, 0.563499 )
@@ -519,10 +527,10 @@ texture = ExtResource( 1 )
 position = Vector2( 168, 50 )
 
 [node name="TopLeft" parent="Camera2D/Limits" index="0"]
-position = Vector2( -239.209, -131.713 )
+position = Vector2( -264, -160 )
 
 [node name="BottomRight" parent="Camera2D/Limits" index="1"]
-position = Vector2( 550.536, 320.036 )
+position = Vector2( 584, 344 )
 
 [node name="Player" type="YSort" parent="."]
 position = Vector2( 0, -5 )
@@ -855,7 +863,7 @@ position = Vector2( 581, -66 )
 position = Vector2( 581, -90 )
 
 [node name="Tree61" parent="Player/YSort" instance=ExtResource( 14 )]
-position = Vector2( 581, -113 )
+position = Vector2( 584, -112 )
 
 [node name="Tree62" parent="Player/YSort" instance=ExtResource( 14 )]
 position = Vector2( 581, -137 )
@@ -944,6 +952,9 @@ position = Vector2( 397.95, -0.527941 )
 [node name="Bush5" parent="Player/YSort" instance=ExtResource( 9 )]
 position = Vector2( 190, 152.656 )
 
+[node name="PentaDesert" parent="Player/YSort" instance=ExtResource( 18 )]
+position = Vector2( -247.251, 79.5444 )
+
 [node name="Casa Azul" parent="Player" instance=ExtResource( 6 )]
 position = Vector2( -72.3173, -18.117 )
 scale = Vector2( 0.30476, 0.30476 )
@@ -994,8 +1005,5 @@ margin_bottom = -9.52441
 
 [node name="puerta3" parent="." instance=ExtResource( 16 )]
 position = Vector2( 487.474, -27.78 )
-
-[node name="PentaDesert" parent="." instance=ExtResource( 18 )]
-position = Vector2( -224.251, 79.5444 )
 
 [editable path="Camera2D"]
