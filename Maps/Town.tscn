@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=72 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/camino_de_pueblo.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -18,6 +18,10 @@
 [ext_resource path="res://Maps/RecursosMap/tscn/puerta.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Maps/RecursosMap/tscn/Puerta de tabla.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaDesert.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Maps/RecursosMap/tscn/PentaCastle.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Maps/RecursosMap/tscn/PentaCave.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Maps/RecursosMap/tscn/PentaForest.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Maps/RecursosMap/tscn/PuertaMercado.tscn" type="PackedScene" id=22]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -503,7 +507,7 @@ scale = Vector2( 1.24505, 1.38889 )
 tile_set = SubResource( 1 )
 cell_size = Vector2( 16, 16 )
 format = 1
-tile_data = PoolIntArray( -65506, 0, 3, 65531, 0, 3, 15, 0, 3, 30, 0, 65539, 131067, 0, 65539, 65551, 0, 65539, 65566, 0, 65539, 196603, 0, 65539, 131087, 0, 65539, 131102, 0, 65539, 262139, 0, 65539, 196623, 0, 65539, 196638, 0, 65539, 327675, 0, 65539, 262159, 0, 131075, 262174, 0, 65539, 393211, 0, 131075, 327710, 0, 131075, 917514, 0, 196608, 917515, 0, 196609, 917516, 0, 7, 983052, 0, 65539, 1048588, 0, 65539, 1048596, 0, 3, 1179638, 0, 3, 1114124, 0, 65539, 1114132, 0, 65539, 1245174, 0, 65539, 1179657, 0, 196611, 1179660, 0, 196612, 1179661, 0, 196609, 1179662, 0, 196609, 1179663, 0, 196609, 1179664, 0, 196609, 1179665, 0, 196609, 1179666, 0, 196609, 1179667, 0, 196609, 1179668, 0, 196615, 1310710, 0, 196612, 1310711, 0, 196609, 1310712, 0, 196609, 1310713, 0, 196609, 1310714, 0, 196609, 1310715, 0, 196609, 1310716, 0, 196609, 1310717, 0, 196609, 1310718, 0, 196609, 1310719, 0, 196609, 1245184, 0, 196609, 1245185, 0, 196609, 1245186, 0, 196609, 1245187, 0, 196609, 1245188, 0, 196609, 1245189, 0, 196609, 1245190, 0, 196609, 1245191, 0, 196609, 1245192, 0, 196610 )
+tile_data = PoolIntArray( -65506, 0, 3, 65531, 0, 3, 15, 0, 3, 30, 0, 65539, 131067, 0, 65539, 65551, 0, 65539, 65566, 0, 65539, 196603, 0, 65539, 131087, 0, 65539, 131102, 0, 65539, 262139, 0, 65539, 196623, 0, 65539, 196638, 0, 65539, 327675, 0, 65539, 262159, 0, 131075, 262174, 0, 65539, 393211, 0, 131075, 327710, 0, 131075, 917513, 0, 196608, 917514, 0, 196609, 917515, 0, 196609, 917516, 0, 7, 983052, 0, 65539, 1048588, 0, 65539, 1048596, 0, 3, 1179638, 0, 3, 1114117, 0, 4, 1114118, 0, 196609, 1114119, 0, 196609, 1114120, 0, 196610, 1114124, 0, 65539, 1114132, 0, 65539, 1245174, 0, 65539, 1179650, 0, 4, 1179651, 0, 196609, 1179652, 0, 196609, 1179653, 0, 196615, 1179657, 0, 196611, 1179660, 0, 196612, 1179661, 0, 196609, 1179662, 0, 196609, 1179663, 0, 196609, 1179664, 0, 196609, 1179665, 0, 196609, 1179666, 0, 196609, 1179667, 0, 196609, 1179668, 0, 196615, 1310710, 0, 196612, 1310711, 0, 196609, 1310712, 0, 196609, 1310713, 0, 196609, 1310714, 0, 196609, 1310715, 0, 196609, 1310716, 0, 196609, 1310717, 0, 196609, 1310718, 0, 196609, 1310719, 0, 196609, 1245184, 0, 196609, 1245185, 0, 196609, 1245186, 0, 196615, 1245192, 0, 196611 )
 
 [node name="DirtCliffTileMap" type="TileMap" parent="."]
 tile_set = SubResource( 49 )
@@ -515,7 +519,6 @@ format = 1
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="LimitMap"]
 position = Vector2( 1.52588e-05, 7.62939e-06 )
-scale = Vector2( 1, 1 )
 polygon = PoolVector2Array( -288, 360, 600, 360, 600, -184, -248, -184, -248, -152, 568, -144, 568, 328, -248, 328, -248, -144, -280, -168 )
 
 [node name="Camino" type="Sprite" parent="."]
@@ -955,6 +958,15 @@ position = Vector2( 190, 152.656 )
 [node name="PentaDesert" parent="Player/YSort" instance=ExtResource( 18 )]
 position = Vector2( -247.251, 79.5444 )
 
+[node name="Pentagrama" parent="Player/YSort" instance=ExtResource( 21 )]
+position = Vector2( 145.131, 320.619 )
+
+[node name="Pentagrama2" parent="Player/YSort" instance=ExtResource( 20 )]
+position = Vector2( 570.836, 78.4644 )
+
+[node name="Pentagrama3" parent="Player/YSort" instance=ExtResource( 19 )]
+position = Vector2( 144.578, -154.844 )
+
 [node name="Casa Azul" parent="Player" instance=ExtResource( 6 )]
 position = Vector2( -72.3173, -18.117 )
 scale = Vector2( 0.30476, 0.30476 )
@@ -977,17 +989,18 @@ margin_top = 51.0
 margin_right = 191.0
 margin_bottom = 118.0
 
+[node name="Puerta Mercado2" parent="Player" instance=ExtResource( 22 )]
+position = Vector2( 240, 8 )
+
 [node name="puerta" parent="Player" instance=ExtResource( 16 )]
 position = Vector2( -72.6236, -7.937 )
-
-[node name="puerta2" parent="Player" instance=ExtResource( 16 )]
-position = Vector2( 247.548, -7.62675 )
 
 [node name="Puerta de tabla" parent="Player" instance=ExtResource( 17 )]
 position = Vector2( -153.183, 264.625 )
 
 [node name="Puerta de tabla2" parent="Player" instance=ExtResource( 17 )]
 position = Vector2( 328.956, 248.579 )
+rotation = -0.000348734
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -999,9 +1012,9 @@ margin_bottom = 14.0
 
 [node name="ControlPause" parent="CanvasLayer" instance=ExtResource( 12 )]
 margin_left = 3.60315
-margin_top = -9.52441
+margin_top = -9.42846
 margin_right = 3.60315
-margin_bottom = -9.52441
+margin_bottom = -9.42845
 
 [node name="puerta3" parent="." instance=ExtResource( 16 )]
 position = Vector2( 487.474, -27.78 )

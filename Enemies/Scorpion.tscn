@@ -7,7 +7,7 @@
 [ext_resource path="res://Overlap/SoftCollision.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Stats.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemies/WanderController.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Enemies/Serpiente.png" type="Texture" id=9]
+[ext_resource path="res://Enemies/Monster.png" type="Texture" id=9]
 [ext_resource path="res://Enemies/Enemy.gd" type="Script" id=10]
 [ext_resource path="res://Overlap/Hurtbox.tscn" type="PackedScene" id=11]
 
@@ -18,25 +18,26 @@ shader_param/active = false
 
 [sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 9 )
-region = Rect2( 0, 96, 48, 48 )
+region = Rect2( 192, 192, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 9 )
-region = Rect2( 48, 96, 48, 48 )
+region = Rect2( 224, 192, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 9 )
-region = Rect2( 96, 96, 48, 48 )
+region = Rect2( 256, 192, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
 "frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
-"name": "Crawl",
+"name": "Wolk",
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=11]
+[sub_resource type="CircleShape2D" id=6]
+radius = 4.0
 
 [sub_resource type="CapsuleShape2D" id=7]
 radius = 7.0
@@ -50,35 +51,31 @@ radius = 421.413
 [sub_resource type="CircleShape2D" id=10]
 radius = 5.0
 
-[node name="Snake" type="KinematicBody2D"]
+[node name="Scorpion" type="KinematicBody2D"]
+scale = Vector2( 0.998175, 0.99673 )
 collision_layer = 16
 script = ExtResource( 10 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 material = SubResource( 1 )
 frames = SubResource( 5 )
-animation = "Crawl"
-frame = 1
+animation = "Wolk"
 playing = true
 offset = Vector2( 0, -12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2( 14, 4 )
-rotation = 1.5708
-scale = Vector2( 0.5, 0.5 )
-shape = SubResource( 11 )
+position = Vector2( 1, -7 )
+shape = SubResource( 6 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 11 )]
 visible = false
-position = Vector2( 13, -2 )
-scale = Vector2( 1, 1.5 )
 collision_layer = 8
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
-position = Vector2( -15, 5 )
+position = Vector2( 0.5, -6 )
 rotation = 1.5708
-scale = Vector2( 0.5, 2.5 )
+scale = Vector2( 1.5, 1.5 )
 shape = SubResource( 7 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
@@ -93,18 +90,18 @@ shape = SubResource( 8 )
 
 [node name="Hitbox" parent="." instance=ExtResource( 3 )]
 visible = false
-position = Vector2( 14, -5 )
 collision_mask = 4
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
-scale = Vector2( 0.5, 0.7 )
+position = Vector2( 8, -7 )
+scale = Vector2( 0.5, 0.5 )
 shape = SubResource( 9 )
 
 [node name="SoftCollision" parent="." instance=ExtResource( 6 )]
 visible = false
-position = Vector2( 14, 0 )
 
 [node name="CollisionShape2D" parent="SoftCollision" index="0"]
+position = Vector2( 0, -5 )
 shape = SubResource( 10 )
 
 [node name="WanderController" parent="." instance=ExtResource( 8 )]

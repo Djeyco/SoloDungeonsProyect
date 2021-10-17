@@ -1,0 +1,43 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Maps/RecursosMap/gd/Pentagrama.gd" type="Script" id=1]
+[ext_resource path="res://Maps/RecursosMap/sprites/portales.png" type="Texture" id=2]
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 432, 288, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 480, 288, 48, 48 )
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 2 )
+region = Rect2( 528, 288, 48, 48 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 7 ) ],
+"loop": true,
+"name": "Portal",
+"speed": 4.0
+} ]
+
+[sub_resource type="CircleShape2D" id=5]
+
+[node name="Pentagrama" type="Area2D"]
+script = ExtResource( 1 )
+escena = "Forest"
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 4 )
+animation = "Portal"
+frame = 3
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, 9.62175 )
+shape = SubResource( 5 )
+
+[connection signal="body_entered" from="." to="." method="_on_PentaDesert_body_entered"]

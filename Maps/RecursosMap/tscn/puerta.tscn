@@ -23,9 +23,10 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=5]
-extents = Vector2( 7.25, 13.5 )
+extents = Vector2( 2.259, 13.5 )
 
-[node name="puerta" type="KinematicBody2D"]
+[node name="puerta" type="Area2D"]
+collision_layer = 2
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.45433, 0.45433 )

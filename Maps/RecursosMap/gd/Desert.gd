@@ -1,13 +1,12 @@
 extends Node2D
 
-var enemy_1 = preload("res://Abeja2.tscn")
-var objeto = preload("res://Maps/RecursosMap/tscn/Tree.tscn")
+var enemy_1 = preload("res://Enemies/Spider.tscn")
+#var objeto = preload("res://Maps/RecursosMap/tscn/Tree.tscn")
 
 func _ready():
 	Global.node_creation_parent = self
 	randomize()
 #	_crear_objeto()
-
 #func _crear_objeto():
 #	var _cont = 0
 #	for cont in 10:
