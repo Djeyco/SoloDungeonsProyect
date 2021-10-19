@@ -6,9 +6,12 @@
 [node name="Interior Tienda" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 147.728, 81.7511 )
-scale = Vector2( 0.404725, 0.404725 )
+position = Vector2( 157.139, 86.6206 )
+scale = Vector2( 0.230814, 0.230814 )
 texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="Area2D" type="Area2D" parent="Sprite"]
 position = Vector2( -365.007, -201.992 )
@@ -30,25 +33,27 @@ polygon = PoolVector2Array( 174.893, -264.623, 170.733, 21.0368, 725.412, 21.036
 visible = false
 polygon = PoolVector2Array( 272.951, -11.8788, 272.951, 25.7237, 411.013, 25.7237, 411.013, -12.44, 355.451, -13.0013, 356.013, -27.5933, 327.39, -27.5933, 327.39, -13.5625 )
 
-[node name="YSort" type="YSort" parent="."]
+[node name="YSort" type="YSort" parent="Sprite"]
+position = Vector2( -365.008, -201.992 )
+scale = Vector2( 2.47081, 2.47081 )
 
-[node name="Estante" parent="YSort" instance=ExtResource( 2 )]
+[node name="Estante" parent="Sprite/YSort" instance=ExtResource( 2 )]
 position = Vector2( -84.926, 31.2724 )
 
-[node name="Estante5" parent="YSort" instance=ExtResource( 2 )]
+[node name="Estante5" parent="Sprite/YSort" instance=ExtResource( 2 )]
 position = Vector2( -84.926, 104.272 )
 
-[node name="Estante2" parent="YSort" instance=ExtResource( 2 )]
+[node name="Estante2" parent="Sprite/YSort" instance=ExtResource( 2 )]
 position = Vector2( -14.926, 31.2724 )
 
-[node name="Estante6" parent="YSort" instance=ExtResource( 2 )]
+[node name="Estante6" parent="Sprite/YSort" instance=ExtResource( 2 )]
 position = Vector2( -14.926, 103.272 )
 
-[node name="Estante3" parent="YSort" instance=ExtResource( 2 )]
+[node name="Estante3" parent="Sprite/YSort" instance=ExtResource( 2 )]
 position = Vector2( 53.074, 31.2724 )
 
-[node name="Estante7" parent="YSort" instance=ExtResource( 2 )]
+[node name="Estante7" parent="Sprite/YSort" instance=ExtResource( 2 )]
 position = Vector2( 53.074, 103.272 )
 
-[node name="Estante4" parent="YSort" instance=ExtResource( 2 )]
+[node name="Estante4" parent="Sprite/YSort" instance=ExtResource( 2 )]
 position = Vector2( 126.074, 31.2724 )
