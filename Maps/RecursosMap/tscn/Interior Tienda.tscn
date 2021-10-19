@@ -18,19 +18,16 @@ position = Vector2( -365.007, -201.992 )
 scale = Vector2( 2.47082, 2.47082 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Sprite/Area2D"]
-visible = false
 position = Vector2( 147.728, 81.7511 )
 scale = Vector2( 0.404725, 0.404725 )
 polygon = PoolVector2Array( 719.865, -267.396, -693.18, -266.01, -691.793, 312.243, 158.253, 310.857, 159.639, 154.16, 724.026, 151.386, 722.639, -253.529, 764.24, -310.384, 762.853, 181.894, 187.373, 179.12, 187.373, 339.977, -738.941, 337.204, -738.941, -393.586, 765.626, -390.812, 762.853, -320.091 )
 
 [node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Sprite/Area2D"]
-visible = false
 position = Vector2( 147.728, 81.7511 )
 scale = Vector2( 0.404725, 0.404725 )
 polygon = PoolVector2Array( 174.893, -264.623, 170.733, 21.0368, 725.412, 21.0368, 725.412, -41.3645, 258.095, -39.9779, 259.482, -266.01 )
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Sprite/Area2D"]
-visible = false
 polygon = PoolVector2Array( 272.951, -11.8788, 272.951, 25.7237, 411.013, 25.7237, 411.013, -12.44, 355.451, -13.0013, 356.013, -27.5933, 327.39, -27.5933, 327.39, -13.5625 )
 
 [node name="YSort" type="YSort" parent="Sprite"]
