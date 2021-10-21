@@ -8,14 +8,11 @@
 [node name="Interior Tienda" type="Node2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 157.139, 86.6206 )
-scale = Vector2( 0.230814, 0.230814 )
+position = Vector2( 169.218, 83.148 )
+scale = Vector2( 0.31365, 0.319904 )
 texture = ExtResource( 1 )
-__meta__ = {
-"_edit_group_": true
-}
 
-[node name="Area2D" type="Area2D" parent="Sprite"]
+[node name="Area2D" type="StaticBody2D" parent="Sprite"]
 position = Vector2( -365.007, -201.992 )
 scale = Vector2( 2.47082, 2.47082 )
 
@@ -34,6 +31,7 @@ polygon = PoolVector2Array( 272.951, -11.8788, 272.951, 25.7237, 411.013, 25.723
 
 [node name="Camera2D" parent="." instance=ExtResource( 4 )]
 position = Vector2( 86.8092, 146.203 )
+scale = Vector2( 1, 1 )
 
 [node name="TopLeft" parent="Camera2D/Limits" index="0"]
 position = Vector2( -138.39, -65.5133 )
@@ -53,22 +51,22 @@ scale = Vector2( 1.75347, 1.75347 )
 remote_path = NodePath("../../../Camera2D")
 
 [node name="Estante" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( -84.926, 31.2724 )
+position = Vector2( -105.968, 31.2724 )
 
 [node name="Estante5" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( -84.926, 104.272 )
+position = Vector2( -105.968, 109.532 )
 
 [node name="Estante2" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( -14.926, 31.2724 )
+position = Vector2( -27.2003, 31.2724 )
 
 [node name="Estante6" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( -14.926, 103.272 )
+position = Vector2( -27.2003, 108.532 )
 
 [node name="Estante3" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 53.074, 31.2724 )
+position = Vector2( 47.8136, 31.2724 )
 
 [node name="Estante7" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 53.074, 103.272 )
+position = Vector2( 46.0601, 108.532 )
 
 [node name="Estante4" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 126.074, 31.2724 )
