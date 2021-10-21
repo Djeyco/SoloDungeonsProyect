@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/Interior Tienda.png" type="Texture" id=1]
 [ext_resource path="res://Maps/RecursosMap/tscn/Estante.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Camera2D.tscn" type="PackedScene" id=4]
 
 [node name="Interior Tienda" type="Node2D"]
 
@@ -30,27 +32,45 @@ polygon = PoolVector2Array( 174.893, -264.623, 170.733, 21.0368, 725.412, 21.036
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Sprite/Area2D"]
 polygon = PoolVector2Array( 272.951, -11.8788, 272.951, 25.7237, 411.013, 25.7237, 411.013, -12.44, 355.451, -13.0013, 356.013, -27.5933, 327.39, -27.5933, 327.39, -13.5625 )
 
-[node name="YSort" type="YSort" parent="Sprite"]
-position = Vector2( -365.008, -201.992 )
-scale = Vector2( 2.47081, 2.47081 )
+[node name="Camera2D" parent="." instance=ExtResource( 4 )]
+position = Vector2( 86.8092, 146.203 )
 
-[node name="Estante" parent="Sprite/YSort" instance=ExtResource( 2 )]
+[node name="TopLeft" parent="Camera2D/Limits" index="0"]
+position = Vector2( -138.39, -65.5133 )
+
+[node name="BottomRight" parent="Camera2D/Limits" index="1"]
+position = Vector2( 422.441, 300.488 )
+
+[node name="YSort" type="YSort" parent="."]
+position = Vector2( 72.8901, 39.998 )
+scale = Vector2( 0.570298, 0.570298 )
+
+[node name="Player" parent="YSort" instance=ExtResource( 3 )]
+position = Vector2( 24.4068, 186.227 )
+scale = Vector2( 1.75347, 1.75347 )
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="YSort/Player"]
+remote_path = NodePath("../../../Camera2D")
+
+[node name="Estante" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -84.926, 31.2724 )
 
-[node name="Estante5" parent="Sprite/YSort" instance=ExtResource( 2 )]
+[node name="Estante5" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -84.926, 104.272 )
 
-[node name="Estante2" parent="Sprite/YSort" instance=ExtResource( 2 )]
+[node name="Estante2" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -14.926, 31.2724 )
 
-[node name="Estante6" parent="Sprite/YSort" instance=ExtResource( 2 )]
+[node name="Estante6" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -14.926, 103.272 )
 
-[node name="Estante3" parent="Sprite/YSort" instance=ExtResource( 2 )]
+[node name="Estante3" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 53.074, 31.2724 )
 
-[node name="Estante7" parent="Sprite/YSort" instance=ExtResource( 2 )]
+[node name="Estante7" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 53.074, 103.272 )
 
-[node name="Estante4" parent="Sprite/YSort" instance=ExtResource( 2 )]
+[node name="Estante4" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 126.074, 31.2724 )
+
+[editable path="Camera2D"]

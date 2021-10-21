@@ -1075,7 +1075,6 @@ script = ExtResource( 13 )
 Enemy = ExtResource( 14 )
 
 [node name="Timer" type="Timer" parent="YSort/Spawns/Spawn1"]
-wait_time = 3.0
 autostart = true
 
 [node name="Spawn2" type="Position2D" parent="YSort/Spawns" groups=[
@@ -1135,7 +1134,6 @@ collision_mask = 2
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
 position = Vector2( 16, -8 )
 polygon = PoolVector2Array( -320, -168, 576, -168, 576, 376, -320, 376, -320, -176, -328, -176, -328, 384, 584, 384, 584, -176, -320, -176 )
-
 [connection signal="timeout" from="YSort/Spawns/Spawn1/Timer" to="YSort/Spawns/Spawn1" method="_on_Timer_timeout"]
 [connection signal="timeout" from="YSort/Spawns/Spawn2/Timer" to="YSort/Spawns/Spawn2" method="_on_Timer_timeout"]
 [connection signal="timeout" from="YSort/Spawns/Spawn3/Timer" to="YSort/Spawns/Spawn3" method="_on_Timer_timeout"]

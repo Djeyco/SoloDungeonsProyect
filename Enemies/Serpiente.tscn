@@ -36,7 +36,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CircleShape2D" id=11]
+[sub_resource type="CircleShape2D" id=6]
 
 [sub_resource type="CapsuleShape2D" id=7]
 radius = 7.0
@@ -58,7 +58,6 @@ script = ExtResource( 10 )
 material = SubResource( 1 )
 frames = SubResource( 5 )
 animation = "Crawl"
-frame = 1
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -67,7 +66,7 @@ visible = false
 position = Vector2( 14, 4 )
 rotation = 1.5708
 scale = Vector2( 0.5, 0.5 )
-shape = SubResource( 11 )
+shape = SubResource( 6 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 11 )]
 visible = false
@@ -111,13 +110,15 @@ shape = SubResource( 10 )
 visible = false
 
 [node name="AnimationPlayer" parent="." instance=ExtResource( 5 )]
-
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="invincibility_ended" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_ended"]
 [connection signal="invincibility_started" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_started"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 
 [editable path="Hurtbox"]
+
 [editable path="PlayerDetectionZone"]
+
 [editable path="Hitbox"]
+
 [editable path="SoftCollision"]

@@ -6,7 +6,7 @@
 [ext_resource path="res://Maps/RecursosMap/sprites/DirtTileset.png" type="Texture" id=4]
 [ext_resource path="res://Maps/RecursosMap/sprites/CliffTileset.png" type="Texture" id=5]
 [ext_resource path="res://Maps/RecursosMap/tscn/Casa Azul.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Maps/RecursosMap/Mercado y Almacen.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Maps/RecursosMap/tscn/Mercado y Almacen.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Maps/RecursosMap/tscn/Bush.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
@@ -22,6 +22,7 @@
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaCave.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaForest.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Maps/RecursosMap/tscn/PuertaMercado.tscn" type="PackedScene" id=22]
+
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -990,7 +991,7 @@ margin_right = 191.0
 margin_bottom = 118.0
 
 [node name="Puerta Mercado2" parent="Player" instance=ExtResource( 22 )]
-position = Vector2( 240, 8 )
+position = Vector2( 239.251, 7.25055 )
 
 [node name="puerta" parent="Player" instance=ExtResource( 16 )]
 position = Vector2( -72.6236, -7.937 )

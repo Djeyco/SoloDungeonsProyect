@@ -4,7 +4,7 @@
 [ext_resource path="res://Maps/RecursosMap/sprites/puertas 2.png" type="Texture" id=2]
 [ext_resource path="res://Maps/RecursosMap/tscn/Interior Tienda.tscn" type="PackedScene" id=3]
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "Close"
 length = 0.3
 tracks/0/type = "value"
@@ -20,7 +20,7 @@ tracks/0/keys = {
 "values": [ 30, 18, 8 ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "Idle"
 length = 0.1
 tracks/0/type = "value"
@@ -36,7 +36,7 @@ tracks/0/keys = {
 "values": [ 8 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 resource_name = "Open"
 length = 0.4
 tracks/0/type = "value"
@@ -66,7 +66,7 @@ tracks/1/keys = {
 } ]
 }
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 6.50822, 29.6766 )
 
 [node name="Puerta Mercado" type="Area2D"]
@@ -74,22 +74,22 @@ script = ExtResource( 1 )
 targuet_scene = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 8, -16 )
+position = Vector2( 8.00079, -15.2879 )
 rotation = -0.0011093
-scale = Vector2( 0.501, 0.501 )
+scale = Vector2( 0.501, 0.478746 )
 texture = ExtResource( 2 )
-hframes = 12
 vframes = 8
+hframes = 12
 frame = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 autoplay = "Idle"
-anims/Close = SubResource( 2 )
-anims/Idle = SubResource( 3 )
-anims/Open = SubResource( 4 )
+anims/Close = SubResource( 1 )
+anims/Idle = SubResource( 2 )
+anims/Open = SubResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( 16, -31 )
 rotation = -0.035184
-shape = SubResource( 1 )
+shape = SubResource( 4 )
