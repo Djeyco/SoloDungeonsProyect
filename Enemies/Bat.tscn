@@ -37,8 +37,9 @@ animations = [ {
 "speed": 6.0
 } ]
 
-[sub_resource type="CircleShape2D" id=6]
-radius = 4.0
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 4.06541
+height = 2.6512
 
 [sub_resource type="CapsuleShape2D" id=7]
 radius = 7.0
@@ -61,7 +62,7 @@ script = ExtResource( 4 )
 material = SubResource( 1 )
 frames = SubResource( 5 )
 animation = "Fly"
-frame = 1
+frame = 2
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -70,7 +71,7 @@ visible = false
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
+rotation = 1.5708
 shape = SubResource( 6 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 3 )]
@@ -109,15 +110,13 @@ shape = SubResource( 10 )
 visible = false
 
 [node name="AnimationPlayer" parent="." instance=ExtResource( 11 )]
+
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="invincibility_ended" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_ended"]
 [connection signal="invincibility_started" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_started"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 
 [editable path="Hurtbox"]
-
 [editable path="PlayerDetectionZone"]
-
 [editable path="Hitbox"]
-
 [editable path="SoftCollision"]
