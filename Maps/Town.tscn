@@ -1,4 +1,4 @@
-[gd_scene load_steps=72 format=2]
+[gd_scene load_steps=76 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/camino_de_pueblo.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -22,7 +22,10 @@
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaCave.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaForest.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Maps/RecursosMap/tscn/PuertaMercado.tscn" type="PackedScene" id=22]
-
+[ext_resource path="res://NPC/TSCN/Adulto.tscn" type="PackedScene" id=23]
+[ext_resource path="res://NPC/TSCN/Gerrero Gía NPC.tscn" type="PackedScene" id=24]
+[ext_resource path="res://NPC/TSCN/Niña.tscn" type="PackedScene" id=25]
+[ext_resource path="res://NPC/TSCN/Vieja.tscn" type="PackedScene" id=26]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -545,6 +548,12 @@ position = Vector2( 168, 55 )
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player/Player"]
 remote_path = NodePath("../../../Camera2D")
 
+[node name="Adulto" parent="Player" instance=ExtResource( 23 )]
+position = Vector2( -104, 45 )
+
+[node name="Niña" parent="Player" instance=ExtResource( 25 )]
+position = Vector2( 216, 285 )
+
 [node name="YSort" type="YSort" parent="Player"]
 position = Vector2( 0, 5 )
 
@@ -1002,6 +1011,12 @@ position = Vector2( -153.183, 264.625 )
 [node name="Puerta de tabla2" parent="Player" instance=ExtResource( 17 )]
 position = Vector2( 328.956, 248.579 )
 rotation = -0.000348734
+
+[node name="Gerrero Gía NPC" parent="Player" instance=ExtResource( 24 )]
+position = Vector2( 464, 53 )
+
+[node name="Vieja" parent="Player" instance=ExtResource( 26 )]
+position = Vector2( -128, 45 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

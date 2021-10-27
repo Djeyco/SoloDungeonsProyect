@@ -1,9 +1,11 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/Interior Tienda.png" type="Texture" id=1]
 [ext_resource path="res://Maps/RecursosMap/tscn/Estante.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=4]
+[ext_resource path="res://NPC/TSCN/Vendedora.tscn" type="PackedScene" id=5]
+[ext_resource path="res://NPC/TSCN/Chico.tscn" type="PackedScene" id=6]
 
 [node name="Interior Tienda" type="Node2D"]
 
@@ -70,5 +72,14 @@ position = Vector2( 46.0601, 108.532 )
 
 [node name="Estante4" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 126.074, 31.2724 )
+
+[node name="Vendedora" parent="YSort" instance=ExtResource( 5 )]
+position = Vector2( 324.15, -20.3082 )
+
+[node name="Chico" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( 486.615, 39.8352 )
+
+[node name="Chico2" parent="YSort" instance=ExtResource( 6 )]
+position = Vector2( 326.493, 40.8076 )
 
 [editable path="Camera2D"]
