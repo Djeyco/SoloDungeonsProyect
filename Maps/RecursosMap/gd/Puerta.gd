@@ -1,6 +1,6 @@
 extends Area2D
 
-export(PackedScene) var targuet_scene
+export(String, FILE, "*.tscn,*.scn") var targuet_scene
 
 func _ready():
 	pass # Replace with function body.
@@ -13,8 +13,10 @@ func _input(event):
 		if get_overlapping_bodies().size() > 0:
 			$AnimationPlayer.play("Open")
 
-func Mercado():
-	var ERR = get_tree().change_scene_to(targuet_scene)
+func next_level():
+	var ERR = get_tree().change_scene(targuet_scene)
 	
 	if ERR != OK:
 		print("siempre falla la esena en la puerta")
+	
+	Global.door_name = name

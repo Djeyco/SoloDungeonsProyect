@@ -27,7 +27,6 @@ animations = [ {
 
 [node name="Pentagrama" type="Area2D"]
 script = ExtResource( 1 )
-escena = "Cave Nivel 1"
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 4 )

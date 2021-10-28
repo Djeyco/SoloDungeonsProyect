@@ -531,7 +531,7 @@ scale = Vector2( 0.474109, 0.563499 )
 texture = ExtResource( 1 )
 
 [node name="Camera2D" parent="." instance=ExtResource( 10 )]
-position = Vector2( 168, 50 )
+position = Vector2( 248, 5 )
 
 [node name="TopLeft" parent="Camera2D/Limits" index="0"]
 position = Vector2( -264, -160 )
@@ -543,7 +543,7 @@ position = Vector2( 584, 344 )
 position = Vector2( 0, -5 )
 
 [node name="Player" parent="Player" instance=ExtResource( 2 )]
-position = Vector2( 168, 55 )
+position = Vector2( 248, 10 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player/Player"]
 remote_path = NodePath("../../../Camera2D")
@@ -1000,7 +1000,8 @@ margin_right = 191.0
 margin_bottom = 118.0
 
 [node name="Puerta Mercado2" parent="Player" instance=ExtResource( 22 )]
-position = Vector2( 239.251, 7.25055 )
+position = Vector2( 246.692, 7.54819 )
+targuet_scene = "res://Maps/RecursosMap/tscn/Interior Tienda.tscn"
 
 [node name="puerta" parent="Player" instance=ExtResource( 16 )]
 position = Vector2( -72.6236, -7.937 )

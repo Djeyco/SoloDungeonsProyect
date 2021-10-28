@@ -1,5 +1,6 @@
 extends Node
 
+var door_name = null
 var node_creation_parent = null
 var player = null
 

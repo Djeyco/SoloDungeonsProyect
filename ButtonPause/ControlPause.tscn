@@ -152,5 +152,6 @@ clip_text = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="FondoMenu/Botones/Continuar" to="." method="_on_Continuar_pressed"]
 [connection signal="pressed" from="FondoMenu/Botones/Salir" to="." method="_on_Salir_pressed"]

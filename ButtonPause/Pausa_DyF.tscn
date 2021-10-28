@@ -1,15 +1,18 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://ButtonPause/Ventana_de_pausa.png" type="Texture" id=1]
 [ext_resource path="res://ButtonPause/Boton1.png" type="Texture" id=2]
 [ext_resource path="res://Title_screen/fonts/Monstserrat-EB14.tres" type="DynamicFont" id=3]
+[ext_resource path="res://ButtonPause/ControlPause.gd" type="Script" id=4]
 
 [node name="Pausa_DyF" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 4 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+targuet_scene = "res://Maps/Town.tscn"
 
 [node name="FondoMenu" type="TextureRect" parent="."]
 visible = false

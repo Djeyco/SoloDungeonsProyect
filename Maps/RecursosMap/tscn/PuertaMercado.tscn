@@ -1,8 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/gd/Puerta.gd" type="Script" id=1]
 [ext_resource path="res://Maps/RecursosMap/sprites/puertas 2.png" type="Texture" id=2]
-[ext_resource path="res://Maps/RecursosMap/tscn/Interior Tienda.tscn" type="PackedScene" id=3]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Close"
@@ -58,28 +57,27 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0.4 ),
+"times": PoolRealArray( 0.3 ),
 "transitions": PoolRealArray( 1 ),
 "values": [ {
 "args": [  ],
-"method": "Mercado"
+"method": "next_level"
 } ]
 }
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 6.50822, 29.6766 )
+extents = Vector2( 3.72574, 14.3306 )
 
 [node name="Puerta Mercado" type="Area2D"]
 script = ExtResource( 1 )
-targuet_scene = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 8.00079, -15.2879 )
+position = Vector2( 0.449795, -15.5239 )
 rotation = -0.0011093
 scale = Vector2( 0.501, 0.478746 )
 texture = ExtResource( 2 )
-vframes = 8
 hframes = 12
+vframes = 8
 frame = 8
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -90,6 +88,5 @@ anims/Open = SubResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2( 16, -31 )
-rotation = -0.035184
+position = Vector2( -0.0458832, -14.2462 )
 shape = SubResource( 4 )
