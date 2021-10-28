@@ -57,12 +57,10 @@ remote_path = NodePath("../../../Camera2D")
 position = Vector2( 321.806, -24.0223 )
 
 [node name="Chico" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 113.733, 76.4668 )
-scale = Vector2( 1, 1 )
+position = Vector2( 323.61, 41.1191 )
 
 [node name="Chico2" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 487.222, 41.3974 )
-scale = Vector2( 1, 1 )
 
 [node name="Estante" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -105.968, 31.2724 )

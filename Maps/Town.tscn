@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=77 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/camino_de_pueblo.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -26,6 +26,7 @@
 [ext_resource path="res://NPC/TSCN/Gerrero Gía NPC.tscn" type="PackedScene" id=24]
 [ext_resource path="res://NPC/TSCN/Niña.tscn" type="PackedScene" id=25]
 [ext_resource path="res://NPC/TSCN/Vieja.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Maps/RecursosMap/gd/Niveles.gd" type="Script" id=27]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -502,6 +503,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 0/z_index = 0
 
 [node name="World" type="Node2D"]
+script = ExtResource( 27 )
 
 [node name="Background" parent="." instance=ExtResource( 3 )]
 position = Vector2( 155.861, 84 )
@@ -1023,9 +1025,9 @@ position = Vector2( -128, 45 )
 
 [node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 8 )]
 margin_left = 3.0
-margin_top = 3.0
+margin_top = 4.0
 margin_right = 63.0
-margin_bottom = 14.0
+margin_bottom = 15.0
 
 [node name="ControlPause" parent="CanvasLayer" instance=ExtResource( 12 )]
 margin_left = 3.60315

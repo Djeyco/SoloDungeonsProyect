@@ -66,7 +66,7 @@ tracks/1/keys = {
 }
 
 [sub_resource type="RectangleShape2D" id=4]
-extents = Vector2( 3.72574, 14.3306 )
+extents = Vector2( 8.44473, 2.88038 )
 
 [node name="Puerta Mercado" type="Area2D"]
 script = ExtResource( 1 )
@@ -87,6 +87,5 @@ anims/Idle = SubResource( 2 )
 anims/Open = SubResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( -0.0458832, -14.2462 )
+position = Vector2( 0, 4 )
 shape = SubResource( 4 )
