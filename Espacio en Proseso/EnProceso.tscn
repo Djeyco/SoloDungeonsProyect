@@ -44,4 +44,5 @@ margin_right = 101.0
 margin_bottom = 48.0
 custom_fonts/font = SubResource( 1 )
 text = "Retornar"
+
 [connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

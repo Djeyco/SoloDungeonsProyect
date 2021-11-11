@@ -98,9 +98,9 @@ __meta__ = {
 
 [node name="Salir" type="Button" parent="FondoMenu/Botones"]
 pause_mode = 2
-margin_left = 74.3484
+margin_left = 75.0158
 margin_top = 125.86
-margin_right = 153.348
+margin_right = 154.015
 margin_bottom = 149.86
 rect_rotation = -90.0
 size_flags_horizontal = 3

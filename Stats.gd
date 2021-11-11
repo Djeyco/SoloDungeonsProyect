@@ -1,5 +1,7 @@
 extends Node
 
+export(String, FILE, "*.tscn,*.scn") var targuet_scene
+
 export(int) var max_health = 1 setget set_max_health
 var health = max_health setget set_health
 
@@ -17,6 +19,9 @@ func set_health(value):
 	emit_signal("health_changed", health)
 	if health <= 0:
 		emit_signal("no_health")
+		# warning-ignore:return_value_discarded
+		get_tree().change_scene(targuet_scene)
+		health = 4
 
 func _ready():
 	self.health = max_health

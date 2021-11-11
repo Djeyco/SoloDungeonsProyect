@@ -26,15 +26,10 @@ onready var hurtbox = $Hurtbox
 onready var blinkAnimationPlayer = $BlinkAnimationPlayer
 
 func _ready():
-	Global.player = self
-	
 	randomize()
 	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
-
-func _exit_tree():
-	Global.player = null
 
 func _physics_process(delta):
 	match state:

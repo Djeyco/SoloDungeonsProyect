@@ -1,5 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://Maps/RecursosMap/sprites/Moneda.png" type="Texture" id=1]
 [ext_resource path="res://ButtonPause/ControlPause.gd" type="Script" id=2]
 [ext_resource path="res://ButtonPause/Ventana_de_pausa.png" type="Texture" id=3]
 [ext_resource path="res://ButtonPause/Boton1.png" type="Texture" id=4]
@@ -8,10 +9,15 @@
 [node name="ControlPause" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+margin_left = 0.5
+margin_top = 0.5
+margin_right = 0.5
+margin_bottom = 0.5
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+targuet_scene = "res://Title_screen/TitleScreen.tscn"
 
 [node name="FondoMenu" type="TextureRect" parent="."]
 visible = false
@@ -20,9 +26,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 margin_left = -62.0
-margin_top = -90.0
+margin_top = -89.0
 margin_right = 63.0
-margin_bottom = 90.0
+margin_bottom = 89.0
 texture = ExtResource( 3 )
 expand = true
 __meta__ = {
@@ -56,10 +62,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -62.5
-margin_top = -90.0
-margin_right = 62.5
-margin_bottom = 90.0
+margin_left = -62.0
+margin_top = -92.0
+margin_right = 63.0
+margin_bottom = 87.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -152,6 +158,23 @@ clip_text = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Moneda" type="Label" parent="FondoMenu" groups=[
+"Ptotal",
+]]
+margin_left = 172.0
+margin_top = 8.5
+margin_right = 202.0
+margin_bottom = 22.5
+rect_scale = Vector2( 1.5, 1.5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="$" type="Sprite" parent="FondoMenu"]
+position = Vector2( 159.693, 19.5967 )
+scale = Vector2( 0.0375, 0.0375 )
+texture = ExtResource( 1 )
 
 [connection signal="pressed" from="FondoMenu/Botones/Continuar" to="." method="_on_Continuar_pressed"]
 [connection signal="pressed" from="FondoMenu/Botones/Salir" to="." method="_on_Salir_pressed"]

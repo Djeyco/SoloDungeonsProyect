@@ -1,0 +1,20 @@
+{
+	"color": "#ffe20e0e",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1636579891.json",
+	"mirror_portraits": false,
+	"name": "Vendedora",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": ""
+		}
+	],
+	"scale": 100
+}

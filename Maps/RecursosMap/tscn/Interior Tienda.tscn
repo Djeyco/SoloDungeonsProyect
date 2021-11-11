@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/Interior Tienda.png" type="Texture" id=1]
 [ext_resource path="res://Maps/RecursosMap/tscn/Estante.tscn" type="PackedScene" id=2]
@@ -7,8 +7,16 @@
 [ext_resource path="res://NPC/TSCN/Vendedora.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Maps/RecursosMap/tscn/PuertaMercado.tscn" type="PackedScene" id=6]
 [ext_resource path="res://NPC/TSCN/Chico.tscn" type="PackedScene" id=7]
+[ext_resource path="res://ButtonPause/ControlPause.tscn" type="PackedScene" id=8]
+[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Maps/RecursosMap/sprites/negro.png" type="Texture" id=10]
 
 [node name="Interior Tienda" type="Node2D"]
+
+[node name="FondoN" type="Sprite" parent="."]
+position = Vector2( 113.599, 110.231 )
+scale = Vector2( 5.59135, 4.29774 )
+texture = ExtResource( 10 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 169.218, 83.148 )
@@ -54,7 +62,7 @@ scale = Vector2( 1.75347, 1.75347 )
 remote_path = NodePath("../../../Camera2D")
 
 [node name="Vendedora" parent="YSort" instance=ExtResource( 5 )]
-position = Vector2( 321.806, -24.0223 )
+position = Vector2( 321.806, -22.9797 )
 
 [node name="Chico" parent="YSort" instance=ExtResource( 7 )]
 position = Vector2( 323.61, 41.1191 )
@@ -85,8 +93,19 @@ position = Vector2( 126.074, 31.2724 )
 
 [node name="PMI" parent="." instance=ExtResource( 6 )]
 visible = false
-position = Vector2( 58.8005, 176.827 )
-rotation = 1.5708
+position = Vector2( 73.1987, 181.353 )
+rotation = 3.14159
 targuet_scene = "res://Maps/Town.tscn"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 9 )]
+
+[node name="ControlPause" parent="CanvasLayer" instance=ExtResource( 8 )]
+visible = false
+margin_left = 0.0557251
+margin_top = -0.367096
+margin_right = 0.0557251
+margin_bottom = -0.367096
 
 [editable path="Camera2D"]

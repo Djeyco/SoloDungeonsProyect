@@ -4,7 +4,6 @@ var enemy_1 = preload("res://Enemies/Serpiente.tscn")
 var enemy_2 = preload("res://Enemies/Scorpion.tscn")
 
 func _ready():
-	Global.update_puntos()
 	Global.node_creation_parent = self
 	randomize()
 
@@ -26,3 +25,4 @@ func _on_Enemy_spawn_timer2_timeout():
 func _on_Timer_timeout():
 	Global.tiempo += 1
 	Global.update_time()
+	Global.update_puntos()

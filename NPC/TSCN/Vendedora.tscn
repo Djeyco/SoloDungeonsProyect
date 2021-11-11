@@ -1,11 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://NPC/Chica.png" type="Texture" id=1]
 [ext_resource path="res://Shadows/LargeShadow.png" type="Texture" id=2]
-
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 7.99264
-height = 7.64215
+[ext_resource path="res://NPC/Script/Vendedora.gd" type="Script" id=3]
+[ext_resource path="res://NPC/Interrogacion.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=2]
 resource_name = "Vendedora Derecha"
@@ -70,7 +68,11 @@ tracks/0/keys = {
 "values": [ 67 ]
 }
 
-[node name="Vendedora" type="KinematicBody2D"]
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 39.3846, 17.3288 )
+
+[node name="Vendedora" type="Area2D"]
+script = ExtResource( 3 )
 
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( 1, 5 )
@@ -85,14 +87,17 @@ hframes = 12
 vframes = 8
 frame = 67
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( 1, -1 )
-rotation = 1.5708
-shape = SubResource( 1 )
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Vendedora Derecha" = SubResource( 2 )
 "anims/Vendedora Espalda" = SubResource( 3 )
 "anims/Vendedora Frente" = SubResource( 4 )
 "anims/Vendedora Izquierda" = SubResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -28.9701, 1.5874 )
+shape = SubResource( 6 )
+
+[node name="QuestionMark" type="Sprite" parent="."]
+position = Vector2( 0.734628, -36.0848 )
+scale = Vector2( 0.0198403, 0.0229114 )
+texture = ExtResource( 4 )

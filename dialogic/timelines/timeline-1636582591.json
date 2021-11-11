@@ -1,0 +1,15 @@
+{
+	"events": [
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bienvenido, ¿en que podemos ayudarle?"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1636582591.json",
+		"name": "Bienvenido"
+	}
+}

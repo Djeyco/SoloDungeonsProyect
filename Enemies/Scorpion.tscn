@@ -80,7 +80,7 @@ scale = Vector2( 1.5, 1.5 )
 shape = SubResource( 7 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
-max_health = 1
+max_health = 2
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 4 )]
 visible = false
