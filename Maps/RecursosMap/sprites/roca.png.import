@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/box.png-b5aed241b277753aa9c36c534c5f15e8.stex"
+path="res://.import/roca.png-adf9276d536d5b3ee6c6cef48ca46e1a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Maps/RecursosMap/sprites/box.png"
-dest_files=[ "res://.import/box.png-b5aed241b277753aa9c36c534c5f15e8.stex" ]
+source_file="res://Maps/RecursosMap/sprites/roca.png"
+dest_files=[ "res://.import/roca.png-adf9276d536d5b3ee6c6cef48ca46e1a.stex" ]
 
 [params]
 
