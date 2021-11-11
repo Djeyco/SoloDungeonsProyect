@@ -505,7 +505,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 script = ExtResource( 27 )
 
 [node name="Background" parent="." instance=ExtResource( 3 )]
-position = Vector2( 155.861, 84 )
+position = Vector2( 170.131, 104.811 )
 scale = Vector2( 1.24505, 1.38889 )
 
 [node name="DirtPathTileMap" type="TileMap" parent="."]
@@ -527,7 +527,7 @@ position = Vector2( 1.52588e-05, 7.62939e-06 )
 polygon = PoolVector2Array( -288, 360, 600, 360, 600, -184, -248, -184, -248, -152, 568, -144, 568, 328, -248, 328, -248, -144, -280, -168 )
 
 [node name="Camino" type="Sprite" parent="."]
-position = Vector2( 146.456, 82.8545 )
+position = Vector2( 146.456, 88.2059 )
 scale = Vector2( 0.474109, 0.563499 )
 texture = ExtResource( 1 )
 
