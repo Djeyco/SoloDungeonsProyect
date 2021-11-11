@@ -5,11 +5,87 @@
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "Bienvenido, ¿en que podemos ayudarle?"
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Desea comprar algo"
+		},
+		{
+			"choice": "SI",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "¿Que desea comprar?"
+		},
+		{
+			"choice": "CORAZONES",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "POSIONES",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "ARMAS",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Gracias por su compra!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "NO",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Gracias por preferirnos!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
 		}
 	],
 	"metadata": {
 		"dialogic-version": "1.3",
 		"file": "timeline-1636582591.json",
-		"name": "Bienvenido"
+		"name": "Vendedora"
 	}
 }

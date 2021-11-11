@@ -5,7 +5,13 @@
 	"folders": {
 		"Characters": {
 			"files": [
-				"character-1636579891.json"
+				"character-1636579891.json",
+				"character-1636643653.json",
+				"character-1636647496.json",
+				"character-1636647526.json",
+				"character-1636647572.json",
+				"character-1636647921.json",
+				"character-1636647987.json"
 			],
 			"folders": {
 
@@ -41,8 +47,7 @@
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1636582591.json",
-				"timeline-1636582932.json"
+				"timeline-1636582591.json"
 			],
 			"folders": {
 

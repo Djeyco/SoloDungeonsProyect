@@ -68,7 +68,7 @@ position = Vector2( 321.806, -22.9797 )
 position = Vector2( 323.61, 41.1191 )
 
 [node name="Chico2" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 487.222, 41.3974 )
+position = Vector2( 26.4948, -42.0798 )
 
 [node name="Estante" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -105.968, 31.2724 )
@@ -102,7 +102,6 @@ targuet_scene = "res://Maps/Town.tscn"
 [node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 9 )]
 
 [node name="ControlPause" parent="CanvasLayer" instance=ExtResource( 8 )]
-visible = false
 margin_left = 0.0557251
 margin_top = -0.367096
 margin_right = 0.0557251

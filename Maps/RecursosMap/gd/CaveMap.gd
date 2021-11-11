@@ -1,6 +1,6 @@
 extends Node2D
 
-const Player = preload("res://Maps/RecursosMap/tscn/Player1.tscn")
+const Player = preload("res://Player/Player.tscn")
 const Exit = preload("res://Maps/RecursosMap/tscn/ExitDoor.tscn")
 const Spawn = preload("res://Maps/RecursosMap/tscn/Spawn_Cave.tscn")
 
