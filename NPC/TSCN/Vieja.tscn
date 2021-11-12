@@ -1,11 +1,7 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Shadows/LargeShadow.png" type="Texture" id=1]
 [ext_resource path="res://NPC/vieja.png" type="Texture" id=2]
-
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 7.99264
-height = 7.64215
 
 [sub_resource type="Animation" id=2]
 resource_name = "Vieja Derecha"
@@ -71,6 +67,12 @@ tracks/0/keys = {
 "values": [ 70 ]
 }
 
+[sub_resource type="CircleShape2D" id=7]
+radius = 5.54048
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 9.80212
+
 [node name="Vieja" type="KinematicBody2D"]
 
 [node name="ShadowSprite" type="Sprite" parent="."]
@@ -86,14 +88,19 @@ hframes = 12
 vframes = 8
 frame = 58
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( 1, -1 )
-rotation = 1.5708
-shape = SubResource( 1 )
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Vieja Derecha" = SubResource( 2 )
 "anims/Vieja Espalda" = SubResource( 3 )
 "anims/Vieja Frente" = SubResource( 4 )
 "anims/Vieja Izquierda" = SubResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.117985, 1.00287 )
+shape = SubResource( 7 )
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
+position = Vector2( 5.96046e-08, 2.00272e-05 )
+shape = SubResource( 6 )

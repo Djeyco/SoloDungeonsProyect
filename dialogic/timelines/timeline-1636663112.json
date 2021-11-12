@@ -1,0 +1,94 @@
+{
+	"events": [
+		{
+			"character": "character-1636643653.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Hola, ¿Quieres escuchar una histoia?"
+		},
+		{
+			"choice": "SI",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636643653.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "En la cueva que esta cerca de esta zona, habitan muchos Mostruos de gran poder."
+		},
+		{
+			"character": "character-1636643653.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Que vinieron con una Bruja Malvada, la cual ningun aventurero a podido vencer."
+		},
+		{
+			"character": "character-1636643653.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Espero que algun dia  llegue un aveturero que la pueda derrotar."
+		},
+		{
+			"character": "character-1636643653.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Mis abuelos no me dejan jugar fuera por culpa de la Burja Malvada y sus mostuos."
+		},
+		{
+			"character": "character-1636647572.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Niña ven a jugar en la casa, es mas seguro aqui."
+		},
+		{
+			"character": "character-1636643653.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ves, te lo dije. Bueno ya me voy, ¡Cuidate!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "NO",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636643653.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ahhhh Que mal."
+		},
+		{
+			"character": "character-1636647572.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Niña ven a jugar en la casa, es mas seguro aqui."
+		},
+		{
+			"character": "character-1636643653.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Bueno ya me voy, ¡Cuidate!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1636663112.json",
+		"name": "Niña"
+	}
+}

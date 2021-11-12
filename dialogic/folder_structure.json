@@ -18,7 +18,7 @@
 			},
 			"metadata": {
 				"color": null,
-				"folded": false
+				"folded": true
 			}
 		},
 		"Definitions": {
@@ -47,7 +47,11 @@
 		},
 		"Timelines": {
 			"files": [
-				"timeline-1636582591.json"
+				"timeline-1636582591.json",
+				"timeline-1636663112.json",
+				"timeline-1636664747.json",
+				"timeline-1636665419.json",
+				"timeline-1636666579.json"
 			],
 			"folders": {
 

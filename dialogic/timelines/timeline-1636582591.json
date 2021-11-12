@@ -39,6 +39,10 @@
 			"value": ""
 		},
 		{
+			"emit_signal": "player_clicked_corazon",
+			"event_id": "dialogic_040"
+		},
+		{
 			"choice": "POSIONES",
 			"condition": "",
 			"definition": "",
@@ -46,11 +50,19 @@
 			"value": ""
 		},
 		{
+			"emit_signal": "player_clicked_posiones",
+			"event_id": "dialogic_040"
+		},
+		{
 			"choice": "ARMAS",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
+		},
+		{
+			"emit_signal": "player_clicked_armas",
+			"event_id": "dialogic_040"
 		},
 		{
 			"event_id": "dialogic_013"

@@ -550,10 +550,10 @@ position = Vector2( 248, 10 )
 remote_path = NodePath("../../../Camera2D")
 
 [node name="Adulto" parent="Player" instance=ExtResource( 23 )]
-position = Vector2( -104, 45 )
+position = Vector2( -104, 5.08454 )
 
 [node name="Niña" parent="Player" instance=ExtResource( 25 )]
-position = Vector2( 216, 285 )
+position = Vector2( 235.529, 265.471 )
 
 [node name="YSort" type="YSort" parent="Player"]
 position = Vector2( 0, 5 )
@@ -1012,10 +1012,10 @@ position = Vector2( 328.956, 248.579 )
 rotation = -0.000348734
 
 [node name="Gerrero Gía NPC" parent="Player" instance=ExtResource( 24 )]
-position = Vector2( 144.97, -132.943 )
+position = Vector2( 144.314, -141.196 )
 
 [node name="Vieja" parent="Player" instance=ExtResource( 26 )]
-position = Vector2( -128, 45 )
+position = Vector2( -127.723, 5.98978 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

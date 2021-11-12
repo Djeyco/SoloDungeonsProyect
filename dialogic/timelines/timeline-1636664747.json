@@ -1,0 +1,59 @@
+{
+	"events": [
+		{
+			"character": "character-1636647496.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Alto ahi aventurero!, esta area esta restringida."
+		},
+		{
+			"character": "character-1636647496.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Pero ¿Que buscas por estos lares?"
+		},
+		{
+			"choice": "Informacion",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636647496.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Informacion? Entiendo."
+		},
+		{
+			"character": "character-1636647496.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quisiera ayudarte, pero no tengo tanto tiempo que llegue a este pueblo."
+		},
+		{
+			"character": "character-1636647496.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Quisas si hablas con la gente del pueblo puedas resibir informacion."
+		},
+		{
+			"character": "character-1636647496.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Disculpa el no poder ayudarte compañero"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1636664747.json",
+		"name": "Guerrero"
+	}
+}

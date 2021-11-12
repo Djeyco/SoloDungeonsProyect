@@ -1,0 +1,127 @@
+{
+	"events": [
+		{
+			"character": "character-1636647526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Vieja, ¿Escuchaste lo que acaban de decir los del pueblo?"
+		},
+		{
+			"character": "character-1636647572.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "No viejo, ¿Que paso?"
+		},
+		{
+			"character": "character-1636647526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Dicen que acaba de llegar un nuevo aventurero al pueblo."
+		},
+		{
+			"character": "character-1636647572.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ohhhh Esas son buenas noticias."
+		},
+		{
+			"character": "character-1636647572.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Espero que este si pued derrotar a la BRUJA MALVADA."
+		},
+		{
+			"character": "character-1636647526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Yo tambien espero lo mismo"
+		},
+		{
+			"character": "character-1636647526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ohh muchacho pero si eres tu, el nuevo aventurero que ha llegado a nuestro querido pueblo."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "¿Que puedes querer tu de dos viejos como nosotros? "
+		},
+		{
+			"choice": "Informacion",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¿Informacion? Pues claro, de que mas podria se jajajajaj"
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "¿De que quieres que te hanble?"
+		},
+		{
+			"choice": "Dinero",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Mapas",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"choice": "Enemigos",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "Nada",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636647526.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Entiendo, suerte en tu aventura"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1636665419.json",
+		"name": "Abuelo"
+	}
+}

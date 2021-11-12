@@ -1,0 +1,139 @@
+{
+	"events": [
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Oye Tu! Si, tu mismo"
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "¿Me puedes ayudar con algo?"
+		},
+		{
+			"choice": "SI",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Necesito comprar algo pero no se que elegir"
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "¿Que elegirias tu?"
+		},
+		{
+			"choice": "Corazones",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pues claro, ¡como no lo pense antes!"
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Los Corazones sirven para aumentar la cantidad de vida que tengo."
+		},
+		{
+			"choice": "Posiones",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pues claro, ¡como no lo pense antes!"
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Las Posiones funcionan muy bien cuando necesito recuperar vida."
+		},
+		{
+			"choice": "Armas",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pues claro, ¡como no lo pense antes!"
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Las Armas son lo mejor al momento de adquirir mas fuerza para acabar con los enemigos"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Gracias por ayudarme, la verdad que lo necesitaba."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "NO",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Entiendo, ahora mismo no tienes tiempo."
+		},
+		{
+			"character": "character-1636647921.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Pues en otro momento sera...."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1636666579.json",
+		"name": "Comprador"
+	}
+}

@@ -1,11 +1,9 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Shadows/LargeShadow.png" type="Texture" id=1]
 [ext_resource path="res://NPC/niña.png" type="Texture" id=2]
-
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 7.99264
-height = 7.64215
+[ext_resource path="res://NPC/Script/NpcDialog.gd" type="Script" id=3]
+[ext_resource path="res://NPC/Interrogacion.png" type="Texture" id=4]
 
 [sub_resource type="Animation" id=2]
 resource_name = "Niña Derecha"
@@ -71,7 +69,11 @@ tracks/0/keys = {
 "values": [ 21, 22, 23, 22 ]
 }
 
-[node name="Niña" type="KinematicBody2D"]
+[sub_resource type="CircleShape2D" id=6]
+
+[node name="Niña" type="Area2D"]
+script = ExtResource( 3 )
+targuet_dialog = "Niña"
 
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( 0.711121, 3.23642 )
@@ -84,16 +86,21 @@ texture = ExtResource( 2 )
 offset = Vector2( 0, -15 )
 hframes = 12
 vframes = 8
-frame = 10
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( 1, -1 )
-rotation = 1.5708
-shape = SubResource( 1 )
+frame = 9
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 "anims/Niña Derecha" = SubResource( 2 )
 "anims/Niña Espalda" = SubResource( 3 )
 "anims/Niña Frente" = SubResource( 4 )
 "anims/Niña Izquierda" = SubResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, 2 )
+rotation = 1.5708
+shape = SubResource( 6 )
+
+[node name="QuestionMark" type="Sprite" parent="."]
+position = Vector2( 0, -20 )
+scale = Vector2( 0.0198403, 0.0229114 )
+texture = ExtResource( 4 )

@@ -1,13 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Shadows/LargeShadow.png" type="Texture" id=1]
 [ext_resource path="res://NPC/Chico.png" type="Texture" id=2]
+[ext_resource path="res://NPC/Script/NpcDialog.gd" type="Script" id=3]
+[ext_resource path="res://NPC/Interrogacion.png" type="Texture" id=4]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 7.99264
-height = 7.64215
-
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=1]
 resource_name = "Chico Derecha"
 length = 0.1
 tracks/0/type = "value"
@@ -23,7 +21,7 @@ tracks/0/keys = {
 "values": [ 82 ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=2]
 resource_name = "Chico Espalda"
 length = 0.1
 tracks/0/type = "value"
@@ -39,7 +37,7 @@ tracks/0/keys = {
 "values": [ 94 ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=3]
 resource_name = "Chico Frente"
 length = 0.1
 tracks/0/type = "value"
@@ -55,7 +53,7 @@ tracks/0/keys = {
 "values": [ 58 ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=4]
 resource_name = "Chico Izquierda"
 length = 0.1
 tracks/0/type = "value"
@@ -71,7 +69,12 @@ tracks/0/keys = {
 "values": [ 70 ]
 }
 
-[node name="Chico" type="KinematicBody2D"]
+[sub_resource type="CircleShape2D" id=6]
+radius = 16.8133
+
+[node name="Chico" type="Area2D"]
+script = ExtResource( 3 )
+targuet_dialog = "Comprador"
 
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( -0.0834807, 4.88508 )
@@ -86,14 +89,18 @@ hframes = 12
 vframes = 8
 frame = 58
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2( 1, -1 )
-rotation = 1.5708
-shape = SubResource( 1 )
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-"anims/Chico Derecha" = SubResource( 2 )
-"anims/Chico Espalda" = SubResource( 3 )
-"anims/Chico Frente" = SubResource( 4 )
-"anims/Chico Izquierda" = SubResource( 5 )
+"anims/Chico Derecha" = SubResource( 1 )
+"anims/Chico Espalda" = SubResource( 2 )
+"anims/Chico Frente" = SubResource( 3 )
+"anims/Chico Izquierda" = SubResource( 4 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+visible = false
+rotation = 1.5708
+shape = SubResource( 6 )
+
+[node name="QuestionMark" type="Sprite" parent="."]
+position = Vector2( 0, -38 )
+scale = Vector2( 0.0198403, 0.0229114 )
+texture = ExtResource( 4 )

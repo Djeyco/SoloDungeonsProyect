@@ -64,11 +64,8 @@ remote_path = NodePath("../../../Camera2D")
 [node name="Vendedora" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 321.806, -22.9797 )
 
-[node name="Chico" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 323.61, 41.1191 )
-
-[node name="Chico2" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 26.4948, -42.0798 )
+[node name="Comprador" parent="YSort" instance=ExtResource( 7 )]
+position = Vector2( 129.346, 42.1885 )
 
 [node name="Estante" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -105.968, 31.2724 )
@@ -89,7 +86,7 @@ position = Vector2( 47.8136, 31.2724 )
 position = Vector2( 46.0601, 108.532 )
 
 [node name="Estante4" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 126.074, 31.2724 )
+position = Vector2( 127.899, 31.2724 )
 
 [node name="PMI" parent="." instance=ExtResource( 6 )]
 visible = false
@@ -102,9 +99,10 @@ targuet_scene = "res://Maps/Town.tscn"
 [node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 9 )]
 
 [node name="ControlPause" parent="CanvasLayer" instance=ExtResource( 8 )]
-margin_left = 0.0557251
+visible = false
+margin_left = 0.389435
 margin_top = -0.367096
-margin_right = 0.0557251
+margin_right = 0.389435
 margin_bottom = -0.367096
 
 [editable path="Camera2D"]
