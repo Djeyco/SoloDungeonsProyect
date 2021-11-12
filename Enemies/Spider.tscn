@@ -66,7 +66,6 @@ playing = true
 offset = Vector2( 0, -12 )
 
 [node name="ShadowSprite" type="Sprite" parent="."]
-visible = false
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
@@ -114,15 +113,13 @@ shape = SubResource( 10 )
 visible = false
 
 [node name="AnimationPlayer" parent="." instance=ExtResource( 5 )]
+
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="invincibility_ended" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_ended"]
 [connection signal="invincibility_started" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_started"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 
 [editable path="Hurtbox"]
-
 [editable path="PlayerDetectionZone"]
-
 [editable path="Hitbox"]
-
 [editable path="SoftCollision"]

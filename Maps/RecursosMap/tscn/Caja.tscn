@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Maps/RecursosMap/sprites/Caja.png" type="Texture" id=1]
+[ext_resource path="res://Maps/RecursosMap/gd/MoverCaja.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10.1422, 7.36666 )
+
+[node name="Caja" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+scale = Vector2( 0.601656, 0.601656 )
+texture = ExtResource( 1 )
+offset = Vector2( 0, -7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -0.157494, -1.84251 )
+shape = SubResource( 1 )

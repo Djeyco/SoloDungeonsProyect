@@ -60,7 +60,10 @@ func move_state(delta):
 	else:
 		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
-	
+	#------
+	if get_slide_count() > 0:
+		check_box_collision(input_vector)
+	#------
 	move()
 	
 	if Input.is_action_just_pressed("roll"):
@@ -68,7 +71,14 @@ func move_state(delta):
 	
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK
-
+#------
+func check_box_collision(input_vector: Vector2):
+	if abs(input_vector.x) + abs(input_vector.y) > 1:
+		return
+	var box = get_slide_collision(0).collider as Box 
+	if box:
+		box.push(MAX_SPEED * input_vector)
+#------
 func roll_state():
 	velocity = roll_vector * ROLL_SPEED
 	animationState.travel("Roll")
