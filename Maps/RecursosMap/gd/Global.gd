@@ -4,6 +4,7 @@ extends Node
 var puntos = 0
 var tiempo = 0
 var Ptotal = 0
+var corazon = 0
 #variables de funciones del mapa y jugador
 var door_name = null
 var node_creation_parent = null
@@ -11,6 +12,9 @@ var player = null
 
 func enemy_killed():
 	puntos += 1
+
+func update_corazon():
+	corazon += 1
 
 func update_Ptotal():
 	get_tree().get_nodes_in_group("Ptotal")[0].text = String(Ptotal)

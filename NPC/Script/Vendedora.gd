@@ -30,6 +30,7 @@ func unpause(timeline_name):
 	
 func dialogic_signal(argument):
 	if argument == 'player_clicked_corazon':
+		Global.update_corazon()
 		print('Corazones')
 	if argument == 'player_clicked_posiones':
 		print('Posiones')

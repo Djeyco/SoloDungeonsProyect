@@ -13,6 +13,7 @@ func set_max_health(value):
 	max_health = value
 	self.health = min(health, max_health)
 	emit_signal("max_health_changed", max_health)
+	max_health = max_health + Global.corazon
 
 func set_health(value):
 	health = value
@@ -24,4 +25,5 @@ func set_health(value):
 		health = 4
 
 func _ready():
+	max_health = max_health + Global.corazon
 	self.health = max_health
