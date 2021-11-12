@@ -974,6 +974,7 @@ position = Vector2( 145.131, 320.619 )
 
 [node name="Pentagrama2" parent="Player/YSort" instance=ExtResource( 20 )]
 position = Vector2( 570.836, 78.4644 )
+escena = "Cave Nivel 1"
 
 [node name="Casa Azul" parent="Player" instance=ExtResource( 6 )]
 position = Vector2( -72.3173, -18.117 )
