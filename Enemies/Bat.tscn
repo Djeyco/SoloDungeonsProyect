@@ -62,7 +62,6 @@ script = ExtResource( 4 )
 material = SubResource( 1 )
 frames = SubResource( 5 )
 animation = "Fly"
-frame = 2
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -71,6 +70,7 @@ visible = false
 texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 rotation = 1.5708
 shape = SubResource( 6 )
 
@@ -83,7 +83,7 @@ position = Vector2( 0, -13 )
 shape = SubResource( 7 )
 
 [node name="Stats" parent="." instance=ExtResource( 5 )]
-max_health = 1
+max_health = 2
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 6 )]
 visible = false
@@ -97,6 +97,7 @@ visible = false
 collision_mask = 4
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
+visible = true
 position = Vector2( 0, -14 )
 shape = SubResource( 9 )
 

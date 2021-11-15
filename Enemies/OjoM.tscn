@@ -1,14 +1,14 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://WhiteColor.shader" type="Shader" id=1]
+[ext_resource path="res://Enemies/Monster.png" type="Texture" id=2]
 [ext_resource path="res://Overlap/Hitbox.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Enemies/PlayerDetectionZone.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Effects/AnimationPlayer.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Overlap/SoftCollision.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Stats.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemies/WanderController.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Enemies/Enemy.gd" type="Script" id=9]
-[ext_resource path="res://Enemies/slimes.png" type="Texture" id=10]
+[ext_resource path="res://Enemies/CaveEnemy.gd" type="Script" id=9]
 [ext_resource path="res://Overlap/Hurtbox.tscn" type="PackedScene" id=11]
 
 [sub_resource type="ShaderMaterial" id=1]
@@ -17,45 +17,49 @@ shader = ExtResource( 1 )
 shader_param/active = false
 
 [sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 10 )
-region = Rect2( 224, 192, 32, 32 )
+atlas = ExtResource( 2 )
+region = Rect2( 96, 64, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 10 )
-region = Rect2( 256, 192, 32, 32 )
+atlas = ExtResource( 2 )
+region = Rect2( 128, 64, 32, 32 )
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 160, 64, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ SubResource( 2 ), SubResource( 3 ) ],
+"frames": [ SubResource( 2 ), SubResource( 3 ), SubResource( 4 ) ],
 "loop": true,
 "name": "Jump",
 "speed": 4.0
 } ]
 
-[sub_resource type="CircleShape2D" id=5]
-radius = 4.0
+[sub_resource type="CircleShape2D" id=6]
+radius = 7.01984
 
-[sub_resource type="CapsuleShape2D" id=6]
-radius = 7.0
-height = 4.0
-
-[sub_resource type="CircleShape2D" id=7]
-radius = 421.413
+[sub_resource type="CapsuleShape2D" id=7]
+radius = 10.2724
+height = 2.81429
 
 [sub_resource type="CircleShape2D" id=8]
-radius = 4.0
+radius = 63.1936
 
 [sub_resource type="CircleShape2D" id=9]
+radius = 7.34832
+
+[sub_resource type="CircleShape2D" id=10]
 radius = 5.0
 
-[node name="Slime" type="KinematicBody2D"]
+[node name="OjoM" type="KinematicBody2D"]
 scale = Vector2( 0.998175, 0.99673 )
 collision_layer = 16
 script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 material = SubResource( 1 )
-frames = SubResource( 4 )
+frames = SubResource( 5 )
 animation = "Jump"
 playing = true
 offset = Vector2( 0, -12 )
@@ -63,14 +67,15 @@ offset = Vector2( 0, -12 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
 position = Vector2( 1, -6 )
-shape = SubResource( 5 )
+shape = SubResource( 6 )
 
 [node name="Hurtbox" parent="." instance=ExtResource( 11 )]
+visible = false
 collision_layer = 8
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
-position = Vector2( 2, -5 )
-shape = SubResource( 6 )
+position = Vector2( 0.372029, -8.88771 )
+shape = SubResource( 7 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
 max_health = 1
@@ -80,24 +85,21 @@ visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
 modulate = Color( 1, 1, 1, 0.454902 )
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="Hitbox" parent="." instance=ExtResource( 3 )]
-visible = false
 collision_mask = 4
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
-visible = true
-position = Vector2( 1, -5 )
+position = Vector2( 0.248629, -8.51148 )
 scale = Vector2( 1.5, 1.5 )
-shape = SubResource( 8 )
+shape = SubResource( 9 )
 
 [node name="SoftCollision" parent="." instance=ExtResource( 6 )]
-visible = false
 
 [node name="CollisionShape2D" parent="SoftCollision" index="0"]
 position = Vector2( 0, -5 )
-shape = SubResource( 9 )
+shape = SubResource( 10 )
 
 [node name="WanderController" parent="." instance=ExtResource( 8 )]
 visible = false

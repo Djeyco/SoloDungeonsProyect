@@ -44,7 +44,7 @@ radius = 7.0
 height = 4.0
 
 [sub_resource type="CircleShape2D" id=8]
-radius = 421.413
+radius = 226.663
 
 [sub_resource type="CircleShape2D" id=9]
 radius = 4.0
@@ -79,10 +79,9 @@ scale = Vector2( 1.5, 1.5 )
 shape = SubResource( 7 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
-max_health = 1
+max_health = 10
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 4 )]
-visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
 modulate = Color( 1, 1, 1, 0.454902 )
@@ -91,6 +90,7 @@ shape = SubResource( 8 )
 [node name="Hitbox" parent="." instance=ExtResource( 3 )]
 visible = false
 collision_mask = 4
+damage = 2
 
 [node name="CollisionShape2D" parent="Hitbox" index="0"]
 position = Vector2( 3, -10 )
@@ -107,15 +107,13 @@ shape = SubResource( 10 )
 visible = false
 
 [node name="AnimationPlayer" parent="." instance=ExtResource( 5 )]
+
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="invincibility_ended" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_ended"]
 [connection signal="invincibility_started" from="Hurtbox" to="." method="_on_Hurtbox_invincibility_started"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
 
 [editable path="Hurtbox"]
-
 [editable path="PlayerDetectionZone"]
-
 [editable path="Hitbox"]
-
 [editable path="SoftCollision"]

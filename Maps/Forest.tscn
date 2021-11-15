@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=68 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/tscn/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -13,8 +13,10 @@
 [ext_resource path="res://Maps/RecursosMap/sprites/GroundTileMap2.png" type="Texture" id=11]
 [ext_resource path="res://ButtonPause/ControlPause.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Maps/RecursosMap/gd/Spawn1.gd" type="Script" id=13]
-[ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Enemies/Slime.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Maps/RecursosMap/gd/Forest.gd" type="Script" id=15]
+[ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Enemies/FishMan.tscn" type="PackedScene" id=17]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -564,6 +566,7 @@ script = ExtResource( 13 )
 Enemy = ExtResource( 14 )
 
 [node name="Timer" type="Timer" parent="YSort/Spawns/Spawn1"]
+wait_time = 2.0
 autostart = true
 
 [node name="Spawn2" type="Position2D" parent="YSort/Spawns" groups=[
@@ -572,7 +575,7 @@ autostart = true
 position = Vector2( -304, 80 )
 scale = Vector2( 1.5, 1.5 )
 script = ExtResource( 13 )
-Enemy = ExtResource( 7 )
+Enemy = ExtResource( 16 )
 
 [node name="Timer" type="Timer" parent="YSort/Spawns/Spawn2"]
 wait_time = 10.0
@@ -596,7 +599,7 @@ autostart = true
 position = Vector2( 591.521, 78.1438 )
 scale = Vector2( 1.5, 1.5 )
 script = ExtResource( 13 )
-Enemy = ExtResource( 7 )
+Enemy = ExtResource( 17 )
 
 [node name="Timer" type="Timer" parent="YSort/Spawns/Spawn4"]
 wait_time = 60.0

@@ -8,7 +8,7 @@
 [ext_resource path="res://Overlap/SoftCollision.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Stats.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemies/WanderController.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Enemies/Enemy.gd" type="Script" id=9]
+[ext_resource path="res://Enemies/CaveEnemy.gd" type="Script" id=9]
 [ext_resource path="res://Enemies/Monster.png" type="Texture" id=10]
 [ext_resource path="res://Overlap/Hurtbox.tscn" type="PackedScene" id=11]
 
@@ -45,7 +45,7 @@ radius = 7.0
 height = 4.0
 
 [sub_resource type="CircleShape2D" id=8]
-radius = 421.413
+radius = 74.0734
 
 [sub_resource type="CapsuleShape2D" id=9]
 
@@ -61,7 +61,7 @@ script = ExtResource( 9 )
 material = SubResource( 1 )
 frames = SubResource( 5 )
 animation = "Wolk"
-frame = 2
+frame = 1
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -85,7 +85,7 @@ scale = Vector2( 1.5, 1.5 )
 shape = SubResource( 7 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
-max_health = 1
+max_health = 10
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 4 )]
 visible = false
