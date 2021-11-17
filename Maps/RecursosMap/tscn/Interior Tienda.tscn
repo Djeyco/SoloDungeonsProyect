@@ -99,7 +99,6 @@ targuet_scene = "res://Maps/Town.tscn"
 [node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 9 )]
 
 [node name="ControlPause" parent="CanvasLayer" instance=ExtResource( 8 )]
-visible = false
 margin_left = 0.389435
 margin_top = -0.367096
 margin_right = 0.389435
