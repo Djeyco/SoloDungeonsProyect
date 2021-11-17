@@ -10,7 +10,7 @@ func _process(_delta):
 		else :
 			$FondoMenu.show()
 			get_tree().paused = true
-			Global.update_Ptotal()
+			Global.update_ptotal()
 
 func _on_Salir_pressed():
 	# warning-ignore:return_value_discarded
@@ -20,3 +20,9 @@ func _on_Continuar_pressed():
 	if get_tree().paused == true:
 		$FondoMenu.hide()
 		get_tree().paused = false
+ 
+func _on_Guardar_pressed():
+	Global.guardar_partida(1)
+
+func _on_Cargar_pressed():
+	pass

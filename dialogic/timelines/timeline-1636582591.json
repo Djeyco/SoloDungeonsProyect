@@ -43,7 +43,7 @@
 			"event_id": "dialogic_040"
 		},
 		{
-			"choice": "POSIONES",
+			"choice": "POCIONES",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
