@@ -4,8 +4,8 @@ extends Node
 var puntos = 0
 var tiempo = 0
 var Ptotal = 0
-var max_corazones = PlayerStats.max_health
-var corazon = PlayerStats.health
+var max_corazones = 0
+var corazon = 0
 var pociones = 0
 var armas = 0
 
@@ -33,9 +33,17 @@ func _ready():
 func enemy_killed():
 	puntos += 1
 
-func update_corazon():
+func comprar_corazon():
 	PlayerStats.max_health += 1
 	PlayerStats.health += 1
+	max_corazones = PlayerStats.max_health
+	corazon = PlayerStats.health
+
+func update_corazones():
+	PlayerStats.max_health = max_corazones
+	PlayerStats.health = corazon
+	print(PlayerStats.max_health)
+	print(PlayerStats.health)
 
 func update_Ptotal():
 	get_tree().get_nodes_in_group("Ptotal")[0].text = String(Ptotal)
@@ -45,6 +53,16 @@ func update_puntos():
 
 func update_time():
 	get_tree().get_nodes_in_group("tiempo")[0].text = String(tiempo)
+
+func reset_newgame():
+	puntos = 0
+	tiempo = 0
+	Ptotal = 0
+	max_corazones = 4
+	corazon = 4
+	pociones = 0
+	armas = 0
+	guardar_partida(1)
 
 func instance_node(node, location, parent):
 	var node_instance = node.instance()
@@ -94,3 +112,4 @@ func cargar_partida(var numero):
 	pociones = datos_cargar.Pociones
 	armas = datos_cargar.Armas
 	update_Ptotal()
+	update_corazones()

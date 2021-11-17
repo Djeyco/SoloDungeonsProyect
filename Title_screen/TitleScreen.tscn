@@ -78,6 +78,7 @@ scene_to_load = "res://Maps/Town.tscn"
 margin_top = 23.0
 margin_right = 146.0
 margin_bottom = 43.0
+scene_to_load = "res://Maps/Town.tscn"
 
 [node name="SalirButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
 margin_top = 46.0
@@ -104,5 +105,7 @@ align = 2
 [node name="FadeIn" parent="." instance=ExtResource( 6 )]
 visible = false
 
+[connection signal="pressed" from="Menu/CenterRow/Buttons/NuevoJuegoButton" to="." method="_on_NuevoJuegoButton_pressed"]
+[connection signal="pressed" from="Menu/CenterRow/Buttons/CargarButton" to="." method="_on_CargarButton_pressed"]
 [connection signal="pressed" from="Menu/CenterRow/Buttons/SalirButton" to="." method="_on_SalirButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]
