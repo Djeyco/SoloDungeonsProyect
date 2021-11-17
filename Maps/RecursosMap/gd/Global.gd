@@ -42,8 +42,6 @@ func comprar_corazon():
 func update_corazones():
 	PlayerStats.max_health = max_corazones
 	PlayerStats.health = corazon
-	print(PlayerStats.max_health)
-	print(PlayerStats.health)
 
 func update_Ptotal():
 	get_tree().get_nodes_in_group("Ptotal")[0].text = String(Ptotal)
