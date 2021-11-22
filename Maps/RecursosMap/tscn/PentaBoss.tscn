@@ -3,21 +3,21 @@
 [ext_resource path="res://Maps/RecursosMap/gd/Pentagrama.gd" type="Script" id=1]
 [ext_resource path="res://Maps/RecursosMap/sprites/portales.png" type="Texture" id=2]
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
 region = Rect2( 432, 288, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=2]
 atlas = ExtResource( 2 )
 region = Rect2( 480, 288, 48, 48 )
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=3]
 atlas = ExtResource( 2 )
 region = Rect2( 528, 288, 48, 48 )
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 7 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 2 ) ],
 "loop": true,
 "name": "Portal",
 "speed": 4.0

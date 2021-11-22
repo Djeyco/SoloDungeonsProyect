@@ -78,7 +78,7 @@ scene_to_load = "res://Maps/Town.tscn"
 margin_top = 23.0
 margin_right = 146.0
 margin_bottom = 43.0
-scene_to_load = "res://Maps/Town.tscn"
+script = null
 
 [node name="SalirButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
 margin_top = 46.0
