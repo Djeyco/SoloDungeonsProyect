@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=2]
+[gd_scene load_steps=66 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/RandomLevelGenTileset.png" type="Texture" id=1]
 [ext_resource path="res://Maps/RecursosMap/sprites/Tierra_con_rocas.png" type="Texture" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://Enemies/Serpiente.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaBoss.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Maps/RecursosMap/tscn/Pociones.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Maps/RecursosMap/gd/Cave.gd" type="Script" id=16]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -491,6 +492,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 0/z_index = 0
 
 [node name="Cueva 1er piso" type="Node2D"]
+script = ExtResource( 16 )
 
 [node name="Muro" type="TileMap" parent="."]
 tile_set = SubResource( 48 )
@@ -816,5 +818,10 @@ margin_bottom = 2.9966
 [node name="Pentagrama" parent="." instance=ExtResource( 14 )]
 position = Vector2( 847.397, 582.677 )
 escena = "Cave Nivel 2"
+
+[node name="Pociones" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="Pociones" to="." method="_on_Pociones_timeout"]
 
 [editable path="Camera2D"]
