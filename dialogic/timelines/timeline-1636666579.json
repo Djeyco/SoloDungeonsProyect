@@ -54,7 +54,7 @@
 			"character": "character-1636647921.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Los Corazones sirven para aumentar la cantidad de vida que tengo."
+			"text": "Los Corazones sirven para aumentar la cantidad de salud que tengo."
 		},
 		{
 			"choice": "Pociones",
@@ -73,7 +73,7 @@
 			"character": "character-1636647921.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
-			"text": "Las Pociones funcionan muy bien cuando necesito recuperar vida."
+			"text": "Las Pociones funcionan muy bien cuando necesito recuperar salud."
 		},
 		{
 			"choice": "Armas",

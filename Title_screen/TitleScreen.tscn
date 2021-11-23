@@ -20,6 +20,7 @@ script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+targuet_scene = "res://Maps/Town.tscn"
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 margin_right = 320.0
@@ -78,7 +79,6 @@ scene_to_load = "res://Maps/Town.tscn"
 margin_top = 23.0
 margin_right = 146.0
 margin_bottom = 43.0
-script = null
 
 [node name="SalirButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
 margin_top = 46.0

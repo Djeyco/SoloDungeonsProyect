@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=77 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/camino_de_pueblo.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -18,6 +18,7 @@
 [ext_resource path="res://Maps/RecursosMap/tscn/puerta.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Maps/RecursosMap/tscn/Puerta de tabla.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaDesert.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Maps/RecursosMap/tscn/Pociones.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaCave.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaForest.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Maps/RecursosMap/tscn/PuertaMercado.tscn" type="PackedScene" id=22]
@@ -532,7 +533,7 @@ scale = Vector2( 0.474109, 0.563499 )
 texture = ExtResource( 1 )
 
 [node name="Camera2D" parent="." instance=ExtResource( 10 )]
-position = Vector2( 248, 5 )
+position = Vector2( 247.555, 8.5636 )
 
 [node name="TopLeft" parent="Camera2D/Limits" index="0"]
 position = Vector2( -264, -160 )
@@ -544,16 +545,16 @@ position = Vector2( 584, 344 )
 position = Vector2( 0, -5 )
 
 [node name="Player" parent="Player" instance=ExtResource( 2 )]
-position = Vector2( 248, 10 )
+position = Vector2( 247.555, 13.5636 )
 
 [node name="RemoteTransform2D" type="RemoteTransform2D" parent="Player/Player"]
 remote_path = NodePath("../../../Camera2D")
 
 [node name="Adulto" parent="Player" instance=ExtResource( 23 )]
-position = Vector2( -104, 5.08454 )
+position = Vector2( -113.25, 42.9249 )
 
 [node name="Niña" parent="Player" instance=ExtResource( 25 )]
-position = Vector2( 235.529, 265.471 )
+position = Vector2( 219.972, 284.601 )
 
 [node name="YSort" type="YSort" parent="Player"]
 position = Vector2( 0, 5 )
@@ -1013,10 +1014,10 @@ position = Vector2( 328.956, 248.579 )
 rotation = -0.000348734
 
 [node name="Gerrero Gía NPC" parent="Player" instance=ExtResource( 24 )]
-position = Vector2( 144.314, -141.196 )
+position = Vector2( 145.365, -100.202 )
 
 [node name="Vieja" parent="Player" instance=ExtResource( 26 )]
-position = Vector2( -127.723, 5.98978 )
+position = Vector2( -128.984, 43.8301 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -1031,6 +1032,8 @@ margin_left = 1.2063
 margin_top = -0.0788584
 margin_right = 1.2063
 margin_bottom = -0.0788422
+
+[node name="Pociones" parent="CanvasLayer" instance=ExtResource( 19 )]
 
 [node name="puerta3" parent="." instance=ExtResource( 16 )]
 position = Vector2( 487.474, -27.78 )

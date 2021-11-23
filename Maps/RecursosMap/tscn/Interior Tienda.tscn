@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/Interior Tienda.png" type="Texture" id=1]
 [ext_resource path="res://Maps/RecursosMap/tscn/Estante.tscn" type="PackedScene" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://ButtonPause/ControlPause.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Maps/RecursosMap/sprites/negro.png" type="Texture" id=10]
+[ext_resource path="res://Maps/RecursosMap/tscn/Pociones.tscn" type="PackedScene" id=11]
 
 [node name="Interior Tienda" type="Node2D"]
 
@@ -65,7 +66,7 @@ remote_path = NodePath("../../../Camera2D")
 position = Vector2( 321.806, -22.9797 )
 
 [node name="Comprador" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 129.346, 42.1885 )
+position = Vector2( 128.825, 77.8982 )
 
 [node name="Estante" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( -105.968, 31.2724 )
@@ -103,5 +104,7 @@ margin_left = 0.389435
 margin_top = -0.367096
 margin_right = 0.389435
 margin_bottom = -0.367096
+
+[node name="Pociones" parent="CanvasLayer" instance=ExtResource( 11 )]
 
 [editable path="Camera2D"]

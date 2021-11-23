@@ -33,9 +33,12 @@ func dialogic_signal(argument):
 		Global.comprar_corazon()
 		print('Corazon')
 	if argument == 'player_clicked_posiones':
+		Global.comprar_pociones()
+		Global.update_pociones()
 		print('Posiones')
 	if argument == 'player_clicked_armas':
 		print('Armas')
+	Global.guardar_partida(1)
 
 func _on_Vendedora_body_entered(body):
 	if body.name == 'Player':

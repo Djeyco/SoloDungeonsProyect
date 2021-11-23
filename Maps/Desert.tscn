@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/gd/Desert.gd" type="Script" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Maps/RecursosMap/tscn/Planta desertica.tscn" type="PackedScene" id=6]
 [ext_resource path="res://ButtonPause/Pausa_DyF.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Maps/RecursosMap/tscn/Pociones.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Camera2D.tscn" type="PackedScene" id=10]
 
 [sub_resource type="TileSet" id=1]
@@ -621,6 +622,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Pociones" parent="CanvasLayer" instance=ExtResource( 9 )]
+
 [node name="LimitMap" type="StaticBody2D" parent="."]
 collision_layer = 2147483712
 collision_mask = 2147483650
@@ -631,8 +634,8 @@ polygon = PoolVector2Array( -272, -224, 592, -224, 592, 432, -272, 432, -272, -2
 [node name="Puntos-Tiempo" type="Timer" parent="."]
 autostart = true
 
-[connection signal="timeout" from="Enemy_spawn_timer" to="." method="_on_Enemy_spawn_timer_timeout"]
 [connection signal="timeout" from="Enemy_spawn_timer" to="." method="_on_Enemy_spawn_timer2_timeout"]
+[connection signal="timeout" from="Enemy_spawn_timer" to="." method="_on_Enemy_spawn_timer_timeout"]
 [connection signal="timeout" from="Enemy_spawn_timer2" to="." method="_on_Enemy_spawn_timer2_timeout"]
 [connection signal="timeout" from="Puntos-Tiempo" to="." method="_on_Timer_timeout"]
 

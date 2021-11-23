@@ -1,6 +1,8 @@
 extends Node2D
 
 func _ready():
+	Global.cargar_partida(1)
+	
 	print(Global.door_name)
 	
 	#Codigo para encontrar puerta

@@ -1,5 +1,6 @@
 extends Control
 
+export(String, FILE, "*.tscn,*.scn") var targuet_scene
 var scene_path_to_loda
 
 func _ready():
@@ -23,4 +24,5 @@ func _on_NuevoJuegoButton_pressed():
 	Global.reset_newgame()
 
 func _on_CargarButton_pressed():
-	Global.cargar_partida(1)
+	# warning-ignore:return_value_discarded
+	get_tree().change_scene(targuet_scene)

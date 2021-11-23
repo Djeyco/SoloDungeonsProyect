@@ -9,6 +9,7 @@ var corazon = 0
 var pociones = 0
 var armas = 0
 
+
 #Lista para guardar datos
 var datos_partida = {
 	Ptotal = 0,
@@ -42,6 +43,23 @@ func comprar_corazon():
 func update_corazones():
 	PlayerStats.max_health = max_corazones
 	PlayerStats.health = corazon
+
+func comprar_pociones():
+	pociones += 1
+	
+func usar_pociones():
+	if PlayerStats.health < PlayerStats.max_health:
+		if pociones > 0:
+			PlayerStats.health += 1
+			pociones -= 1
+
+# warning-ignore:unused_argument
+func update_arma(damage):
+	damage = armas
+	return
+
+func update_pociones():
+	get_tree().get_nodes_in_group("pociones")[0].text = String(pociones)
 
 func update_Ptotal():
 	get_tree().get_nodes_in_group("Ptotal")[0].text = String(Ptotal)

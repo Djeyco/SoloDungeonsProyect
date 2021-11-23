@@ -18,6 +18,7 @@ var velocity = Vector2.ZERO
 var roll_vector = Vector2.DOWN
 var stats = PlayerStats
 
+
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
@@ -71,6 +72,9 @@ func move_state(delta):
 	
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK
+		
+	if Input.is_action_just_pressed("Curar"):
+		Global.usar_pociones()
 #------
 func check_box_collision(input_vector: Vector2):
 	if abs(input_vector.x) + abs(input_vector.y) > 1:
@@ -97,6 +101,7 @@ func roll_animation_finished():
 
 func attack_animation_finished():
 	state = MOVE
+	print(swordHitbox.damage)
 
 func _on_Hurtbox_area_entered(area):
 	stats.health -= area.damage

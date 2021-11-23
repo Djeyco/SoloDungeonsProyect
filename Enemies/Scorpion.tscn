@@ -60,7 +60,7 @@ script = ExtResource( 10 )
 material = SubResource( 1 )
 frames = SubResource( 5 )
 animation = "Wolk"
-frame = 1
+frame = 2
 playing = true
 offset = Vector2( 0, -12 )
 

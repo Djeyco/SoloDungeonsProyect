@@ -1,4 +1,4 @@
-[gd_scene load_steps=68 format=2]
+[gd_scene load_steps=69 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/tscn/Bush.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -17,6 +17,7 @@
 [ext_resource path="res://Maps/RecursosMap/gd/Forest.gd" type="Script" id=15]
 [ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Enemies/FishMan.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Maps/RecursosMap/tscn/Pociones.tscn" type="PackedScene" id=18]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -1155,6 +1156,8 @@ rect_scale = Vector2( 1.5, 1.5 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Pociones" parent="CanvasLayer" instance=ExtResource( 18 )]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 collision_layer = 64

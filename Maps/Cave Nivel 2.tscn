@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/RandomLevelGenTileset.png" type="Texture" id=1]
 [ext_resource path="res://Maps/RecursosMap/sprites/Tierra_con_rocas.png" type="Texture" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=6]
 [ext_resource path="res://ButtonPause/ControlPause.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Enemies/Ghost.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Maps/RecursosMap/tscn/Pociones.tscn" type="PackedScene" id=9]
 
 [sub_resource type="TileSet" id=1]
 0/name = "Tierra_con_rocas.png 0"
@@ -522,6 +523,8 @@ position = Vector2( 366.616, 341.038 )
 [node name="HealthUI" parent="CanvasLayer" instance=ExtResource( 6 )]
 
 [node name="ControlPause" parent="CanvasLayer" instance=ExtResource( 7 )]
+
+[node name="Pociones" parent="CanvasLayer" instance=ExtResource( 9 )]
 
 [node name="Ghost" parent="." instance=ExtResource( 8 )]
 position = Vector2( 69.5121, 25.6552 )
