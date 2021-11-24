@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Maps/RecursosMap/sprites/negro.png" type="Texture" id=1]
+[ext_resource path="res://Title_screen/Intro.gd" type="Script" id=2]
+
+[node name="Intro" type="Node2D"]
+script = ExtResource( 2 )
+targuet_dialog = "Intro"
+targuet_inicio = "res://Maps/Town.tscn"
+targuet_menu_principal = "res://Title_screen/TitleScreen.tscn"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 156.7, 90.5 )
+scale = Vector2( 2.02667, 2.145 )
+texture = ExtResource( 1 )

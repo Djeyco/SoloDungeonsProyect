@@ -1,11 +1,11 @@
 {
-	"color": "#ffd20d0d",
+	"color": "#ffcd730a",
 	"description": "",
 	"display_name": "",
 	"display_name_bool": false,
 	"id": "character-1636647987.json",
 	"mirror_portraits": false,
-	"name": "Vendedor",
+	"name": "Eidan",
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
@@ -16,5 +16,5 @@
 			"path": ""
 		}
 	],
-	"scale": 100
+	"scale": 170
 }

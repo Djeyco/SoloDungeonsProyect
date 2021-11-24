@@ -20,7 +20,6 @@ script = ExtResource( 7 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
-targuet_scene = "res://Maps/Town.tscn"
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
 margin_right = 320.0
@@ -73,7 +72,7 @@ custom_constants/separation = 3
 [node name="NuevoJuegoButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
 margin_right = 146.0
 align = 0
-scene_to_load = "res://Maps/Town.tscn"
+scene_to_load = "res://Title_screen/Intro.tscn"
 
 [node name="CargarButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 1 )]
 margin_top = 23.0
@@ -105,7 +104,6 @@ align = 2
 [node name="FadeIn" parent="." instance=ExtResource( 6 )]
 visible = false
 
-[connection signal="pressed" from="Menu/CenterRow/Buttons/NuevoJuegoButton" to="." method="_on_NuevoJuegoButton_pressed"]
 [connection signal="pressed" from="Menu/CenterRow/Buttons/CargarButton" to="." method="_on_CargarButton_pressed"]
 [connection signal="pressed" from="Menu/CenterRow/Buttons/SalirButton" to="." method="_on_SalirButton_pressed"]
 [connection signal="fade_finished" from="FadeIn" to="." method="_on_FadeIn_fade_finished"]

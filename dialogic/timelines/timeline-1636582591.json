@@ -39,8 +39,112 @@
 			"value": ""
 		},
 		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Un Corazon vale $500 ¿Desea Comprar?"
+		},
+		{
+			"choice": "SI",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"condition": ">=",
+			"definition": "1637707811-146",
+			"event_id": "dialogic_012",
+			"value": "500"
+		},
+		{
+			"condition": "<",
+			"definition": "1637711734-483",
+			"event_id": "dialogic_012",
+			"value": "10"
+		},
+		{
 			"emit_signal": "player_clicked_corazon",
 			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "",
+			"definition": "1637711734-483",
+			"event_id": "dialogic_012",
+			"value": "10"
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Usted ya tiene el maximo de salud posible."
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Gracias por preferirnos!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1637707811-146",
+			"event_id": "dialogic_012",
+			"value": "500"
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Usted no tiene suficiente dinero"
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Gracias por preferirnos!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "NO",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Comprendo, Tenga buen resto del dia."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
 		},
 		{
 			"choice": "POCIONES",
@@ -50,25 +154,81 @@
 			"value": ""
 		},
 		{
-			"emit_signal": "player_clicked_posiones",
-			"event_id": "dialogic_040"
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Una Pocion vale $50 ¿Desea Comprar?"
 		},
 		{
-			"choice": "ARMAS",
+			"choice": "SI",
 			"condition": "",
 			"definition": "",
 			"event_id": "dialogic_011",
 			"value": ""
 		},
 		{
-			"emit_signal": "player_clicked_armas",
+			"condition": ">=",
+			"definition": "1637707811-146",
+			"event_id": "dialogic_012",
+			"value": "50"
+		},
+		{
+			"emit_signal": "player_clicked_posiones",
 			"event_id": "dialogic_040"
 		},
 		{
 			"event_id": "dialogic_013"
 		},
 		{
-			"character": "",
+			"condition": "<",
+			"definition": "1637707811-146",
+			"event_id": "dialogic_012",
+			"value": "50"
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Usted no tiene suficiente dinero"
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "¡Gracias por preferirnos!"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"choice": "NO",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1636579891.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Comprendo, Tenga buen resto del dia."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1636579891.json",
 			"event_id": "dialogic_001",
 			"portrait": "",
 			"text": "¡Gracias por su compra!"

@@ -1,0 +1,137 @@
+{
+	"events": [
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "¿Dessea Iniciar una Nueva Partida?"
+		},
+		{
+			"choice": "SI",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 5
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "En algun lugar del mundo, existen unas tierras muy hermosas y prosperas."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Llamadas \"Meginhard\""
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Un reino lleno de diferentes paisajes, tanto bellos como peligrosos."
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "EL Rey de dicho reino gobernaba de manera Justa y Honorable, este tenia un Hijo llamado \"Eidan\"."
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ese es mi nombre."
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Todos los dias eran pasificos, hasta que un dia desde unas tierras muy lejanas,"
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " Llego una Horrible y Ambisiosa BRUJA."
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Con su deseo de Poder, asesino a mi padre, y me maldijo combirtiendomen en una Bestia."
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Si!, una bestia mitad HOMBRE y mitad ZORRO."
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "irreconosible ante todo el reino, y despojado de mi hogar."
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ahora solo me queda, acostumbrarme a mi nueva vida o recuperar lo que es mio."
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "y la verdad no pienso quedarme de brazos crusados, mientras esa bruja hace sufrir a todo mi reino."
+		},
+		{
+			"character": "character-1636647987.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Aqui es donde comienza mi HISTORIA"
+		},
+		{
+			"event_id": "dialogic_023",
+			"wait_seconds": 2
+		},
+		{
+			"emit_signal": "Inicio",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"choice": "NO",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"emit_signal": "Menu_Principal",
+			"event_id": "dialogic_040"
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		},
+		{
+			"event_id": "dialogic_013"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1637705882.json",
+		"name": "Intro"
+	}
+}

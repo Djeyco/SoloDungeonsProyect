@@ -46,6 +46,9 @@ func update_corazones():
 
 func comprar_pociones():
 	pociones += 1
+
+func comprar_arma():
+	pass
 	
 func usar_pociones():
 	if PlayerStats.health < PlayerStats.max_health:
@@ -90,6 +93,8 @@ func puntostotales():
 	Ptotal = puntos + Ptotal
 	puntos = 0
 	tiempo = 0
+	if Ptotal > 1000:
+		Ptotal = 1000
 
 func guardar_partida(var numero):
 	var save = File.new()

@@ -20,6 +20,10 @@ func _input(event):
 			get_tree().paused = true
 			var dialog = Dialogic.start(targuet_dialog)
 			dialog.pause_mode = Node.PAUSE_MODE_PROCESS
+			var monedas = Global.Ptotal
+			var max_salud = PlayerStats.max_health
+			Dialogic.set_variable("Ptotal", monedas)
+			Dialogic.set_variable("Max_salud", max_salud)
 			dialog.connect('timeline_end', self, 'unpause')
 			dialog.connect('dialogic_signal', self, 'dialogic_signal')
 			add_child(dialog)
@@ -31,13 +35,13 @@ func unpause(timeline_name):
 func dialogic_signal(argument):
 	if argument == 'player_clicked_corazon':
 		Global.comprar_corazon()
+		Global.Ptotal -= 500
 		print('Corazon')
 	if argument == 'player_clicked_posiones':
 		Global.comprar_pociones()
 		Global.update_pociones()
+		Global.Ptotal -= 50
 		print('Posiones')
-	if argument == 'player_clicked_armas':
-		print('Armas')
 	Global.guardar_partida(1)
 
 func _on_Vendedora_body_entered(body):

@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Maps/RecursosMap/gd/Pentagrama.gd" type="Script" id=1]
+[ext_resource path="res://Maps/RecursosMap/gd/PentaCave.gd" type="Script" id=1]
 [ext_resource path="res://Maps/RecursosMap/sprites/portales.png" type="Texture" id=2]
 
 [sub_resource type="AtlasTexture" id=1]
@@ -31,7 +31,7 @@ script = ExtResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 4 )
 animation = "Portal"
-frame = 1
+frame = 2
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

@@ -3,6 +3,17 @@
 
 	],
 	"variables": [
-
+		{
+			"id": "1637707811-146",
+			"name": "Ptotal",
+			"type": 0,
+			"value": "0"
+		},
+		{
+			"id": "1637711734-483",
+			"name": "Max_salud",
+			"type": 0,
+			"value": "0"
+		}
 	]
 }

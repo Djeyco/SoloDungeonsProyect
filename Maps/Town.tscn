@@ -1,4 +1,4 @@
-[gd_scene load_steps=77 format=2]
+[gd_scene load_steps=78 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/camino_de_pueblo.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://NPC/TSCN/Niña.tscn" type="PackedScene" id=25]
 [ext_resource path="res://NPC/TSCN/Vieja.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Maps/RecursosMap/gd/Niveles.gd" type="Script" id=27]
+[ext_resource path="res://NPC/TSCN/Viejo.tscn" type="PackedScene" id=28]
 
 [sub_resource type="TileSet" id=1]
 0/name = "DirtTileset.png 0"
@@ -1037,5 +1038,8 @@ margin_bottom = -0.0788422
 
 [node name="puerta3" parent="." instance=ExtResource( 16 )]
 position = Vector2( 487.474, -27.78 )
+
+[node name="Viejo" parent="." instance=ExtResource( 28 )]
+position = Vector2( 526.809, 47.0378 )
 
 [editable path="Camera2D"]

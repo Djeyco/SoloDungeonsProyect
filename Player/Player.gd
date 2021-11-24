@@ -101,7 +101,6 @@ func roll_animation_finished():
 
 func attack_animation_finished():
 	state = MOVE
-	print(swordHitbox.damage)
 
 func _on_Hurtbox_area_entered(area):
 	stats.health -= area.damage
