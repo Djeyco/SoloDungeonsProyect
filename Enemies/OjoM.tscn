@@ -61,6 +61,7 @@ script = ExtResource( 9 )
 material = SubResource( 1 )
 frames = SubResource( 5 )
 animation = "Jump"
+frame = 2
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -81,7 +82,6 @@ shape = SubResource( 7 )
 max_health = 1
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 4 )]
-visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
 modulate = Color( 1, 1, 1, 0.454902 )

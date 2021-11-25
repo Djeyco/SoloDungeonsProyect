@@ -52,7 +52,7 @@ radius = 5.34431
 [sub_resource type="CircleShape2D" id=10]
 radius = 5.0
 
-[node name="Slime" type="KinematicBody2D"]
+[node name="MiniMedusa" type="KinematicBody2D"]
 scale = Vector2( 0.998175, 0.99673 )
 collision_layer = 16
 script = ExtResource( 9 )
@@ -61,6 +61,7 @@ script = ExtResource( 9 )
 material = SubResource( 1 )
 frames = SubResource( 5 )
 animation = "Jump"
+frame = 1
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -83,7 +84,6 @@ max_health = 1
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 4 )]
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
-visible = false
 modulate = Color( 1, 1, 1, 0.454902 )
 shape = SubResource( 8 )
 

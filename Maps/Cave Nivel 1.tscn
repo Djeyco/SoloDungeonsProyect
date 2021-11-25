@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=67 format=2]
 
 [ext_resource path="res://Maps/RecursosMap/sprites/RandomLevelGenTileset.png" type="Texture" id=1]
 [ext_resource path="res://Maps/RecursosMap/sprites/Tierra_con_rocas.png" type="Texture" id=2]
@@ -10,12 +10,13 @@
 [ext_resource path="res://ButtonPause/ControlPause.tscn" type="PackedScene" id=8]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=9]
 [ext_resource path="res://Maps/RecursosMap/tscn/Caja.tscn" type="PackedScene" id=10]
-[ext_resource path="res://Enemies/Bat.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Enemies/OjoM.tscn" type="PackedScene" id=11]
 [ext_resource path="res://Enemies/Spider.tscn" type="PackedScene" id=12]
-[ext_resource path="res://Enemies/Serpiente.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Enemies/MiniMedusa.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Maps/RecursosMap/tscn/PentaBoss.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Maps/RecursosMap/tscn/Pociones.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Maps/RecursosMap/gd/Cave.gd" type="Script" id=16]
+[ext_resource path="res://Enemies/Gargola.tscn" type="PackedScene" id=17]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -699,70 +700,61 @@ position = Vector2( -165.625, 379.026 )
 [node name="Caja19" parent="YSort/Caja" instance=ExtResource( 10 )]
 position = Vector2( -165.625, 298.026 )
 
-[node name="Bat" type="YSort" parent="YSort"]
+[node name="Gargola" type="YSort" parent="YSort"]
 
-[node name="Bat" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( -167.371, 196.438 )
+[node name="Gargola" parent="YSort/Gargola" instance=ExtResource( 17 )]
+position = Vector2( -161.817, 161.817 )
 
-[node name="Bat2" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( -14.9208, 113.913 )
+[node name="Gargola2" parent="YSort/Gargola" instance=ExtResource( 17 )]
+position = Vector2( 116.868, -241.227 )
 
-[node name="Bat3" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( -234.147, 40.2079 )
+[node name="Gargola3" parent="YSort/Gargola" instance=ExtResource( 17 )]
+position = Vector2( 142.339, 88.4001 )
 
-[node name="Bat4" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( 760.045, -159.196 )
+[node name="Gargola4" parent="YSort/Gargola" instance=ExtResource( 17 )]
+position = Vector2( -437.506, 575.35 )
 
-[node name="Bat5" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( 863.283, -309.103 )
+[node name="Gargola5" parent="YSort/Gargola" instance=ExtResource( 17 )]
+position = Vector2( 35.9594, 617.302 )
 
-[node name="Bat6" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( 134.963, -215.765 )
+[node name="Gargola7" parent="YSort/Gargola" instance=ExtResource( 17 )]
+position = Vector2( 587.336, 194.78 )
 
-[node name="Bat7" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( -58.7846, 644.077 )
+[node name="Gargola8" parent="YSort/Gargola" instance=ExtResource( 17 )]
+position = Vector2( 834.557, 220.251 )
 
-[node name="Bat8" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( -326.071, 560.638 )
+[node name="Ojo" type="YSort" parent="YSort"]
 
-[node name="Bat9" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( 209.62, -366.5 )
+[node name="OjoM" parent="YSort/Ojo" instance=ExtResource( 11 )]
+position = Vector2( -5.99323, 58.434 )
 
-[node name="Bat10" parent="YSort/Bat" instance=ExtResource( 11 )]
-position = Vector2( 529.232, 196.357 )
+[node name="OjoM2" parent="YSort/Ojo" instance=ExtResource( 11 )]
+position = Vector2( 191.783, -154.326 )
 
-[node name="serpiente" type="YSort" parent="YSort"]
+[node name="OjoM3" parent="YSort/Ojo" instance=ExtResource( 11 )]
+position = Vector2( -110.875, 536.394 )
 
-[node name="Snake" parent="YSort/serpiente" instance=ExtResource( 13 )]
-position = Vector2( 124.291, 102.042 )
+[node name="OjoM6" parent="YSort/Ojo" instance=ExtResource( 11 )]
+position = Vector2( 319.139, 636.781 )
 
-[node name="Snake2" parent="YSort/serpiente" instance=ExtResource( 13 )]
-position = Vector2( 199.245, -177.973 )
+[node name="OjoM4" parent="YSort/Ojo" instance=ExtResource( 11 )]
+position = Vector2( 648.767, 358.095 )
 
-[node name="Snake3" parent="YSort/serpiente" instance=ExtResource( 13 )]
-position = Vector2( -428.666, 541.862 )
+[node name="OjoM7" parent="YSort/Ojo" instance=ExtResource( 11 )]
+position = Vector2( 916.964, 143.837 )
 
-[node name="Snake4" parent="YSort/serpiente" instance=ExtResource( 13 )]
-position = Vector2( 197.831, 643.686 )
+[node name="OjoM8" parent="YSort/Ojo" instance=ExtResource( 11 )]
+position = Vector2( 876.509, -280.183 )
 
-[node name="Snake5" parent="YSort/serpiente" instance=ExtResource( 13 )]
-position = Vector2( 281.269, -25.2375 )
-
-[node name="Snake6" parent="YSort/serpiente" instance=ExtResource( 13 )]
-position = Vector2( 602.296, 202.451 )
-
-[node name="Snake7" parent="YSort/serpiente" instance=ExtResource( 13 )]
-position = Vector2( 660.279, 356.6 )
+[node name="OjoM5" parent="YSort/Ojo" instance=ExtResource( 11 )]
+position = Vector2( 729.675, -203.77 )
 
 [node name="Spider" type="YSort" parent="YSort"]
 
 [node name="Spider" parent="YSort/Spider" instance=ExtResource( 12 )]
-position = Vector2( 283.55, 65.7609 )
+position = Vector2( 297.035, -48.1104 )
 
 [node name="Spider2" parent="YSort/Spider" instance=ExtResource( 12 )]
-position = Vector2( 289.207, 152.028 )
-
-[node name="Spider3" parent="YSort/Spider" instance=ExtResource( 12 )]
 position = Vector2( 289.207, 152.028 )
 
 [node name="Spider4" parent="YSort/Spider" instance=ExtResource( 12 )]
@@ -772,22 +764,30 @@ position = Vector2( 27.5771, 344.361 )
 position = Vector2( -280.721, 625.789 )
 
 [node name="Spider6" parent="YSort/Spider" instance=ExtResource( 12 )]
-position = Vector2( 405.503, 535.891 )
+position = Vector2( -94.9315, 643.769 )
 
 [node name="Spider7" parent="YSort/Spider" instance=ExtResource( 12 )]
 position = Vector2( 415.991, 359.091 )
 
-[node name="Spider8" parent="YSort/Spider" instance=ExtResource( 12 )]
-position = Vector2( 908.935, 155.321 )
-
-[node name="Spider9" parent="YSort/Spider" instance=ExtResource( 12 )]
-position = Vector2( 850.5, 227.24 )
-
-[node name="Spider10" parent="YSort/Spider" instance=ExtResource( 12 )]
-position = Vector2( 519.375, -229.744 )
-
 [node name="Spider12" parent="YSort/Spider" instance=ExtResource( 12 )]
 position = Vector2( 445.958, -108.381 )
+
+[node name="MiniMedusa" type="YSort" parent="YSort"]
+
+[node name="MiniMedusa" parent="YSort/MiniMedusa" instance=ExtResource( 13 )]
+position = Vector2( 287.675, 525.906 )
+
+[node name="MiniMedusa2" parent="YSort/MiniMedusa" instance=ExtResource( 13 )]
+position = Vector2( 476.462, 224.746 )
+
+[node name="MiniMedusa3" parent="YSort/MiniMedusa" instance=ExtResource( 13 )]
+position = Vector2( 702.706, -17.9796 )
+
+[node name="MiniMedusa5" parent="YSort/MiniMedusa" instance=ExtResource( 13 )]
+position = Vector2( 494.441, -263.702 )
+
+[node name="MiniMedusa4" parent="YSort/MiniMedusa" instance=ExtResource( 13 )]
+position = Vector2( -94.3933, 340.116 )
 
 [node name="Camera2D" parent="." instance=ExtResource( 7 )]
 position = Vector2( -302.077, -208.484 )
