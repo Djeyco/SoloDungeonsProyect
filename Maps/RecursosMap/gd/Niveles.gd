@@ -1,12 +1,7 @@
 extends Node2D
 
+var musica_fondo = preload("res://Music and Sounds/Pajaritos cantando.ogg")
+
 func _ready():
+	MusicaFondo.musica_fondo_on(musica_fondo)
 	Global.cargar_partida(1)
-	
-	print(Global.door_name)
-	
-	#Codigo para encontrar puerta
-	if Global.door_name:
-		var door_node = find_node(Global.door_name)
-		if door_node:
-			$Player.global_position = door_node.global_position

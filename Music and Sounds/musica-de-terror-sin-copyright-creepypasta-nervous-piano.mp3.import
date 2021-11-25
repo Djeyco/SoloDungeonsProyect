@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/musica-de-terror-sin-copyright-creepypasta-nervous-piano.mp3-1c6a5cb1c0d4776bda579d3b9981ec18.mp3str"
+
+[deps]
+
+source_file="res://Music and Sounds/musica-de-terror-sin-copyright-creepypasta-nervous-piano.mp3"
+dest_files=[ "res://.import/musica-de-terror-sin-copyright-creepypasta-nervous-piano.mp3-1c6a5cb1c0d4776bda579d3b9981ec18.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
