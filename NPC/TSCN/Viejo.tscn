@@ -1,77 +1,20 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Shadows/LargeShadow.png" type="Texture" id=1]
 [ext_resource path="res://NPC/Otosan viejo.png" type="Texture" id=2]
+[ext_resource path="res://NPC/Interrogacion.png" type="Texture" id=3]
+[ext_resource path="res://NPC/Script/NpcDialog.gd" type="Script" id=4]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 7.99264
-height = 7.64215
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 3.70486
+height = 9.14982
 
-[sub_resource type="Animation" id=2]
-resource_name = "Viejo Derecha"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ 7 ]
-}
+[sub_resource type="CircleShape2D" id=3]
+radius = 27.2526
 
-[sub_resource type="Animation" id=3]
-resource_name = "Viejo Espalda"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ 10 ]
-}
-
-[sub_resource type="Animation" id=4]
-resource_name = "Viejo Frente"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ 1 ]
-}
-
-[sub_resource type="Animation" id=5]
-resource_name = "Viejo Izquierda"
-length = 0.1
-tracks/0/type = "value"
-tracks/0/path = NodePath("Sprite:frame")
-tracks/0/interp = 2
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ 4 ]
-}
-
-[node name="Viejo" type="KinematicBody2D"]
+[node name="Viejo" type="Area2D"]
+script = ExtResource( 4 )
+targuet_dialog = "Viejo"
 
 [node name="ShadowSprite" type="Sprite" parent="."]
 position = Vector2( -0.171586, 4.47487 )
@@ -86,14 +29,21 @@ hframes = 3
 vframes = 4
 frame = 1
 
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+position = Vector2( -0.15749, 1.41741 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="QuestionMark" type="Sprite" parent="."]
+position = Vector2( 0, -28.1798 )
+scale = Vector2( 0.0198403, 0.0229114 )
+texture = ExtResource( 3 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 visible = false
-position = Vector2( 1, -1 )
+position = Vector2( -0.0236855, 0.10243 )
 rotation = 1.5708
-shape = SubResource( 1 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-"anims/Viejo Derecha" = SubResource( 2 )
-"anims/Viejo Espalda" = SubResource( 3 )
-"anims/Viejo Frente" = SubResource( 4 )
-"anims/Viejo Izquierda" = SubResource( 5 )
+shape = SubResource( 3 )

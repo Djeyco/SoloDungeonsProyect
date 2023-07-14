@@ -1,0 +1,43 @@
+{
+	"events": [
+		{
+			"character": "character-1637854140.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hola, Aventurero."
+		},
+		{
+			"character": "character-1637854140.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Veo que estas pasando por momentos dificiles"
+		},
+		{
+			"character": "character-1637854140.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Lo digo por tu aspecto."
+		},
+		{
+			"character": "character-1637854140.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Permiteme  presentarme, Soy el Sabio del reino"
+		},
+		{
+			"character": "character-1637854140.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Si deseas probar tu valia en las cuevas, nesecitaras mejorar tu salud."
+		},
+		{
+			"event_id": "dialogic_022",
+			"transition_duration": 1
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.3",
+		"file": "timeline-1637854259.json",
+		"name": "Viejo"
+	}
+}

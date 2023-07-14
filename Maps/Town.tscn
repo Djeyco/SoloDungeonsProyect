@@ -1018,6 +1018,9 @@ rotation = -0.000348734
 [node name="Gerrero Gía NPC" parent="Player" instance=ExtResource( 24 )]
 position = Vector2( 145.365, -100.202 )
 
+[node name="Viejo" parent="Player" instance=ExtResource( 28 )]
+position = Vector2( 539.815, 74.548 )
+
 [node name="Vieja" parent="Player" instance=ExtResource( 26 )]
 position = Vector2( -128.984, 43.8301 )
 
@@ -1039,9 +1042,6 @@ margin_bottom = -0.0788422
 
 [node name="puerta3" parent="." instance=ExtResource( 16 )]
 position = Vector2( 487.474, -27.78 )
-
-[node name="Viejo" parent="." instance=ExtResource( 28 )]
-position = Vector2( 526.809, 47.0378 )
 
 [node name="MusicaFondo" parent="." instance=ExtResource( 29 )]
 

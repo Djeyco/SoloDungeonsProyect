@@ -5,9 +5,9 @@
 [ext_resource path="res://NPC/Script/NpcDialog.gd" type="Script" id=3]
 [ext_resource path="res://NPC/Interrogacion.png" type="Texture" id=4]
 
-[sub_resource type="CircleShape2D" id=5]
+[sub_resource type="CircleShape2D" id=1]
 
-[sub_resource type="CircleShape2D" id=6]
+[sub_resource type="CircleShape2D" id=2]
 radius = 5.06289
 
 [node name="Niña" type="Area2D"]
@@ -32,7 +32,7 @@ frame = 10
 visible = false
 position = Vector2( 0, 2 )
 rotation = 1.5708
-shape = SubResource( 5 )
+shape = SubResource( 1 )
 
 [node name="QuestionMark" type="Sprite" parent="."]
 position = Vector2( 0, -21.1798 )
@@ -43,4 +43,4 @@ texture = ExtResource( 4 )
 visible = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
-shape = SubResource( 6 )
+shape = SubResource( 2 )

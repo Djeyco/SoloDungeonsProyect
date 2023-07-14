@@ -61,7 +61,7 @@ script = ExtResource( 9 )
 material = SubResource( 1 )
 frames = SubResource( 5 )
 animation = "Jump"
-frame = 2
+frame = 1
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -79,7 +79,7 @@ position = Vector2( 0.372029, -8.88771 )
 shape = SubResource( 7 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
-max_health = 1
+max_health = 8
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 4 )]
 

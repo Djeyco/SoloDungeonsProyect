@@ -12,6 +12,5 @@ offset = Vector2( 0, -80 )
 position = Vector2( 0, 1.41814 )
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
-visible = false
 position = Vector2( 0, 7.2557 )
 polygon = PoolVector2Array( 183.191, -249.623, -476.148, -246.391, -479.38, -14.4744, -232.128, -16.0904, -232.128, 83.2787, 186.423, 78.4306 )
